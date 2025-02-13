@@ -32,7 +32,7 @@ jobs:
           done
           echo "✅ All JSON files are valid"
 
-      - name: Check Required Fields
+      - name: Check Required Fields and URL Format
         run: |
           cat > validate.js << 'EOF'
           const fs = require('fs');
@@ -66,23 +66,42 @@ jobs:
           const files = fs.readdirSync('tokenlists');
           let hasError = false;
 
+          // URL validation function
+          function validateLogoURI(token, network) {
+            const expectedPattern = `https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/images/${network}/${token.address}.png`;
+            if (token.logoURI !== expectedPattern) {
+              console.log(`❌ Invalid logoURI format for ${token.symbol} (${token.address}) in ${network}`);
+              console.log(`Expected: ${expectedPattern}`);
+              console.log(`Found: ${token.logoURI}`);
+              return false;
+            }
+            return true;
+          }
+
           files.forEach(file => {
             if (file.endsWith('.json')) {
               const data = JSON.parse(fs.readFileSync(`tokenlists/${file}`));
               const valid = validate(data);
+              const network = file.includes('eth') ? 'eth' : 'avax';
               
               if (!valid) {
                 console.log(`❌ Validation failed for ${file}:`, validate.errors);
                 hasError = true;
               } else {
-                // Validate chain IDs
+                // Validate chain IDs and URLs
                 data.tokens.forEach(token => {
+                  // Chain ID validation
                   if (file.includes('eth') && token.chainId !== 1) {
                     console.log(`❌ Invalid chainId in ${file}: ETH tokens must have chainId 1`);
                     hasError = true;
                   }
                   if (file.includes('avax') && token.chainId !== 43114) {
                     console.log(`❌ Invalid chainId in ${file}: AVAX tokens must have chainId 43114`);
+                    hasError = true;
+                  }
+                  
+                  // URL format validation
+                  if (!validateLogoURI(token, network)) {
                     hasError = true;
                   }
                 });
