@@ -55,6 +55,14 @@
       "symbol": "WETH",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/images/avax/0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/images/avax/0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7.png"
     }
   ]
 } 
