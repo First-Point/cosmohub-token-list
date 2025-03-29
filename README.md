@@ -79,6 +79,19 @@ const exists = await tokenList.hasToken(43114, '0xb97ef9ef8734c71904d8002f8b6bc6
 - **Regular Updates**: Token lists are regularly maintained and updated
 - **Validation**: All token data is validated for accuracy and completeness
 
+## Data Sources
+
+This token list aggregates data from multiple trusted sources to provide the most comprehensive and accurate token information. Our primary sources include:
+
+- **TraderJoe**: [traderjoe-xyz/joe-tokenlists](https://github.com/traderjoe-xyz/joe-tokenlists) - Popular tokens from the TraderJoe DEX ecosystem
+- **Pangolin**: 
+  - [pangolindex/tokenlists](https://github.com/pangolindex/tokenlists) - Token lists from the Pangolin Exchange
+  - [pangolindex/tokens](https://github.com/pangolindex/tokens) - Token assets and metadata from Pangolin
+- **Uniswap**: [Uniswap/default-token-list](https://github.com/Uniswap/default-token-list) - The default token list used by the Uniswap interface
+- **TrustWallet**: [trustwallet/assets](https://github.com/trustwallet/assets) - A comprehensive, up-to-date collection of token information
+
+Our synchronization process ensures that token data is regularly updated from these sources while maintaining consistency in format and validation across all networks.
+
 ## Validation and Quality Control
 
 All token lists in this repository go through rigorous validation to ensure:
