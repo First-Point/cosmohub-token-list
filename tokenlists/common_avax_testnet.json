@@ -50,14 +50,6 @@
     },
     {
       "chainId": 43113,
-      "address": "0x224695ba2a98e4a096a519b503336e06d9116e48",
-      "name": "The Crypt",
-      "symbol": "RIP",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43113/logos/0x224695ba2a98e4a096a519b503336e06d9116e48.png"
-    },
-    {
-      "chainId": 43113,
       "address": "0xaf5d473b3f8f96a5b21c6bbb97e09b491335acb9",
       "name": "Fuji PNG",
       "symbol": "fujiPNG",
