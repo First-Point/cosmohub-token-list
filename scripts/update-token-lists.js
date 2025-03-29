@@ -1,17 +1,18 @@
 #!/usr/bin/env node
 
 /**
- * Token List Address Normalizer
+ * Update Token Lists Script
  * 
- * This script updates all token lists in both assets and tokenlists directories
- * to ensure token addresses are consistently in lowercase format.
+ * This script processes all JSON token list files in both the assets
+ * and tokenlists directories, converting token addresses to lowercase
+ * and updating the logoURI fields to use lowercase addresses.
  * 
- * It processes:
- * 1. All JSON files in assets/{chainId}/ directories
- * 2. All JSON files in the tokenlists/ directory
+ * It helps ensure consistency across the codebase by enforcing the
+ * standard that all token addresses should be in lowercase format.
  * 
- * For each token list, it converts the token address field to lowercase
- * and updates the logoURI to use the lowercase address.
+ * Usage:
+ *   node update-token-lists.js             # Update all token lists
+ *   node update-token-lists.js --dry-run   # Show what would be updated without making changes
  */
 
 const fs = require('fs');
@@ -21,125 +22,163 @@ const path = require('path');
 const REPO_ROOT = path.resolve(__dirname, '../');
 const ASSETS_DIR = path.join(REPO_ROOT, 'assets');
 const TOKENLISTS_DIR = path.join(REPO_ROOT, 'tokenlists');
-const LOGOS_DIR = 'logos';
+const LOGOS_DIR_NAME = 'logos';
 const DRY_RUN = process.argv.includes('--dry-run');
 
 // Stats tracking
 const stats = {
-  processedFiles: 0,
-  modifiedFiles: 0,
-  tokensProcessed: 0,
-  addressesChanged: 0,
-  logoURIsChanged: 0,
+  filesProcessed: 0,
+  tokensUpdated: 0,
   errors: 0
 };
 
 /**
- * Normalizes a token address to lowercase
+ * Converts a token address to lowercase
  * @param {string} address - Token address
- * @returns {string} - Normalized address (lowercase)
+ * @returns {string} - Lowercase address
  */
 function normalizeAddress(address) {
-  if (!address) return address;
+  if (!address || typeof address !== 'string') return address;
   return address.toLowerCase();
 }
 
 /**
- * Updates logoURI to use lowercase address
+ * Updates a logo URI to use lowercase address
  * @param {string} logoURI - Original logo URI
- * @param {string} address - Original address
  * @returns {string} - Updated logo URI with lowercase address
  */
-function updateLogoURI(logoURI, address) {
-  if (!logoURI || !address) return logoURI;
+function normalizeLogoURI(logoURI) {
+  if (!logoURI || typeof logoURI !== 'string') return logoURI;
   
-  // Only update if the address is part of the logoURI
-  const addressLower = normalizeAddress(address);
-  if (logoURI.includes(address) && addressLower !== address) {
-    return logoURI.replace(address, addressLower);
+  // For GitHub raw URLs
+  if (logoURI.includes('githubusercontent.com')) {
+    // Extract the address part from the URL
+    const addressMatch = logoURI.match(/\/([0-9a-fA-F]{40})\.png/);
+    if (addressMatch && addressMatch[1]) {
+      const address = addressMatch[1];
+      const lowercaseAddress = normalizeAddress(address);
+      return logoURI.replace(`/${address}.png`, `/${lowercaseAddress}.png`);
+    }
+  }
+  
+  // For relative paths (./logos/0x...)
+  if (logoURI.includes('/logos/')) {
+    const addressMatch = logoURI.match(/\/logos\/([0-9a-fA-F]{40})\.png/);
+    if (addressMatch && addressMatch[1]) {
+      const address = addressMatch[1];
+      const lowercaseAddress = normalizeAddress(address);
+      return logoURI.replace(`/logos/${address}.png`, `/logos/${lowercaseAddress}.png`);
+    }
   }
   
   return logoURI;
 }
 
 /**
- * Processes a token list file
- * @param {string} filePath - Path to the token list JSON file
+ * Processes a token list file, normalizing addresses and logo URIs
+ * @param {string} filePath - Path to token list file
+ * @returns {boolean} - True if successful
  */
-function processTokenList(filePath) {
-  console.log(`Processing: ${filePath}`);
-  stats.processedFiles++;
-  
+function processTokenListFile(filePath) {
   try {
-    // Read token list file
-    const fileContent = fs.readFileSync(filePath, 'utf8');
-    let tokenList = JSON.parse(fileContent);
+    console.log(`Processing file: ${filePath}`);
+    stats.filesProcessed++;
     
-    // Skip if no tokens field
-    if (!tokenList.tokens || !Array.isArray(tokenList.tokens)) {
-      console.warn(`No tokens array found in ${filePath}, skipping.`);
-      return;
+    // Read the file
+    const fileContent = fs.readFileSync(filePath, 'utf8');
+    let tokenList;
+    
+    try {
+      tokenList = JSON.parse(fileContent);
+    } catch (error) {
+      console.error(`Error parsing JSON in ${filePath}: ${error.message}`);
+      stats.errors++;
+      return false;
     }
     
-    let modified = false;
-    stats.tokensProcessed += tokenList.tokens.length;
+    // Check if the file has a tokens array
+    if (!tokenList.tokens || !Array.isArray(tokenList.tokens)) {
+      console.warn(`Warning: No tokens array found in ${filePath}`);
+      return true;
+    }
+    
+    let tokensUpdated = 0;
     
     // Process each token
-    tokenList.tokens = tokenList.tokens.map(token => {
-      if (!token.address) return token;
+    for (const token of tokenList.tokens) {
+      let tokenUpdated = false;
       
-      const originalAddress = token.address;
-      const normalizedAddress = normalizeAddress(originalAddress);
-      
-      // Clone the token object
-      const updatedToken = { ...token };
-      
-      // Update address to lowercase if needed
-      if (normalizedAddress !== originalAddress) {
-        updatedToken.address = normalizedAddress;
-        stats.addressesChanged++;
-        modified = true;
+      // Update token address if needed
+      if (token.address && token.address !== normalizeAddress(token.address)) {
+        if (!DRY_RUN) {
+          token.address = normalizeAddress(token.address);
+        }
+        tokenUpdated = true;
       }
       
-      // Update logoURI to use lowercase address if needed
+      // Update logo URI if needed
       if (token.logoURI) {
-        const updatedLogoURI = updateLogoURI(token.logoURI, originalAddress);
-        if (updatedLogoURI !== token.logoURI) {
-          updatedToken.logoURI = updatedLogoURI;
-          stats.logoURIsChanged++;
-          modified = true;
+        const normalizedLogoURI = normalizeLogoURI(token.logoURI);
+        if (normalizedLogoURI !== token.logoURI) {
+          if (!DRY_RUN) {
+            token.logoURI = normalizedLogoURI;
+          }
+          tokenUpdated = true;
         }
       }
       
-      return updatedToken;
-    });
-    
-    // Save the updated token list
-    if (modified && !DRY_RUN) {
-      fs.writeFileSync(filePath, JSON.stringify(tokenList, null, 2), 'utf8');
-      stats.modifiedFiles++;
-      console.log(`Updated: ${filePath}`);
-    } else if (modified) {
-      stats.modifiedFiles++;
-      console.log(`Would update (dry run): ${filePath}`);
+      if (tokenUpdated) {
+        tokensUpdated++;
+      }
     }
+    
+    if (tokensUpdated > 0) {
+      console.log(`  ${tokensUpdated} tokens would be updated in ${filePath}`);
+      stats.tokensUpdated += tokensUpdated;
+      
+      // Save the updated file
+      if (!DRY_RUN) {
+        fs.writeFileSync(filePath, JSON.stringify(tokenList, null, 2), 'utf8');
+        console.log(`  File updated successfully with ${tokensUpdated} changes`);
+      }
+    } else {
+      console.log(`  No updates needed for ${filePath}`);
+    }
+    
+    return true;
   } catch (error) {
-    console.error(`Error processing ${filePath}: ${error.message}`);
+    console.error(`Error processing file ${filePath}: ${error.message}`);
     stats.errors++;
+    return false;
   }
 }
 
 /**
- * Processes all token lists in a directory
- * @param {string} dir - Directory path
+ * Processes all JSON files in a directory
+ * @param {string} directory - Directory to process
  */
-function processDirectory(dir) {
-  const files = fs.readdirSync(dir)
-    .filter(file => file.endsWith('.json'))
-    .map(file => path.join(dir, file));
-  
-  for (const file of files) {
-    processTokenList(file);
+function processDirectory(directory) {
+  try {
+    const items = fs.readdirSync(directory);
+    
+    for (const item of items) {
+      const itemPath = path.join(directory, item);
+      const stat = fs.statSync(itemPath);
+      
+      if (stat.isDirectory()) {
+        // Skip the logos directory
+        if (item === LOGOS_DIR_NAME) continue;
+        
+        // Recursively process subdirectories
+        processDirectory(itemPath);
+      } else if (stat.isFile() && item.endsWith('.json')) {
+        // Process JSON files
+        processTokenListFile(itemPath);
+      }
+    }
+  } catch (error) {
+    console.error(`Error processing directory ${directory}: ${error.message}`);
+    stats.errors++;
   }
 }
 
@@ -147,56 +186,37 @@ function processDirectory(dir) {
  * Main function
  */
 async function main() {
-  console.log('Token List Address Normalizer');
-  console.log('============================');
-  console.log(DRY_RUN ? 'DRY RUN MODE - No files will be modified' : 'LIVE MODE - Files will be updated');
+  console.log(`${DRY_RUN ? '[DRY RUN] ' : ''}Token List Updater`);
+  console.log('==========================================');
   
   try {
-    // 1. Process tokenlists directory
-    console.log('\nProcessing tokenlists directory...');
-    if (fs.existsSync(TOKENLISTS_DIR)) {
-      processDirectory(TOKENLISTS_DIR);
-    }
+    // Process both assets and tokenlists directories
+    console.log('\nProcessing assets directory:');
+    processDirectory(ASSETS_DIR);
     
-    // 2. Process assets/{chainId} directories
-    console.log('\nProcessing assets directory...');
-    if (fs.existsSync(ASSETS_DIR)) {
-      // Get all chain directories
-      const chainDirs = fs.readdirSync(ASSETS_DIR)
-        .filter(dir => {
-          const fullPath = path.join(ASSETS_DIR, dir);
-          return fs.statSync(fullPath).isDirectory() && /^\d+$/.test(dir);
-        });
-      
-      // Process each chain directory
-      for (const chainDir of chainDirs) {
-        const chainDirPath = path.join(ASSETS_DIR, chainDir);
-        processDirectory(chainDirPath);
-      }
-    }
+    console.log('\nProcessing tokenlists directory:');
+    processDirectory(TOKENLISTS_DIR);
     
     // Print summary
-    console.log('\nProcessing Complete!');
-    console.log('===================');
-    console.log(`Files processed: ${stats.processedFiles}`);
-    console.log(`Files modified: ${stats.modifiedFiles}`);
-    console.log(`Tokens processed: ${stats.tokensProcessed}`);
-    console.log(`Addresses changed to lowercase: ${stats.addressesChanged}`);
-    console.log(`Logo URIs updated: ${stats.logoURIsChanged}`);
-    console.log(`Errors encountered: ${stats.errors}`);
+    console.log('\nSummary:');
+    console.log(`Files processed: ${stats.filesProcessed}`);
+    console.log(`Tokens ${DRY_RUN ? 'to be ' : ''}updated: ${stats.tokensUpdated}`);
+    console.log(`Errors: ${stats.errors}`);
     
-    if (DRY_RUN) {
-      console.log('\nThis was a dry run. Run without --dry-run to apply changes.');
+    if (DRY_RUN && stats.tokensUpdated > 0) {
+      console.log('\nThis was a dry run. To actually update the files, run:');
+      console.log('node scripts/update-token-lists.js');
     }
     
+    console.log('\nDone!');
   } catch (error) {
-    console.error(`Unexpected error: ${error.message}`);
+    console.error(`Error: ${error.message}`);
     process.exit(1);
   }
 }
 
 // Run the script
 main().catch(err => {
-  console.error('Error:', err);
+  console.error('Unexpected error:', err);
   process.exit(1);
 }); 

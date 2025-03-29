@@ -6,7 +6,7 @@
       "name": "Wrapped AVAX",
       "symbol": "WAVAX",
       "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43113/logos/0xd00ae08403b9bbb9124bb305c09058e32c39a48c.png"
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43113/logos/0xd00ae08403b9bbb9124bb305c09058e32c39a48c.png"
     },
     {
       "chainId": 43113,
@@ -14,7 +14,7 @@
       "name": "USD Coin",
       "symbol": "USDC",
       "decimals": 6,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43113/logos/0xb6076c93701d6a07266c31066b298aec6dd65c2d.png"
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43113/logos/0xb6076c93701d6a07266c31066b298aec6dd65c2d.png"
     },
     {
       "chainId": 43113,
@@ -22,7 +22,7 @@
       "name": "USD Tether",
       "symbol": "USDT",
       "decimals": 6,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43113/logos/0xab231a5744c8e6c45481754928ccffffd4aa0732.png"
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43113/logos/0xab231a5744c8e6c45481754928ccffffd4aa0732.png"
     }
   ]
 }
