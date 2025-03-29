@@ -31,6 +31,30 @@ Each token entry includes the following fields:
 }
 ```
 
+## Token Address Format
+
+All token addresses in this repository are standardized to lowercase format:
+
+1. In JSON files (token lists), all addresses are stored in lowercase format
+2. Logo filenames in the `assets/{chainId}/logos/` directories use lowercase addresses
+3. In the logoURI fields, addresses are consistently lowercase
+
+This standardization ensures:
+- Consistent behavior across different case-sensitivity environments
+- Predictable paths for accessing logo files 
+- Simplified address comparison logic
+- Improved compatibility with case-insensitive file systems
+
+If you're contributing to this repository, please ensure:
+- All token addresses are in lowercase format
+- Logo files are named using lowercase addresses (e.g., `0x1234abcd...png`)
+- All scripts maintain this consistency
+
+**Important Notes:**
+- While Ethereum addresses can be represented in checksum format (mixed case) for display purposes in user interfaces, all addresses in this repository's files must be lowercase.
+- Our synchronization scripts automatically convert addresses to lowercase when importing from external sources.
+- The validation scripts will flag any addresses that don't conform to the lowercase standard.
+
 ## Supported Networks
 
 The following blockchain networks are currently supported:

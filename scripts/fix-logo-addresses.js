@@ -1,85 +1,88 @@
 #!/usr/bin/env node
 
 /**
- * Token Logo Address Normalizer
+ * Fix Logo Addresses Script
  * 
- * This script converts all token logo filenames to lowercase format.
- * It walks through the assets directory structure, finds all logo files
- * with mixed-case (checksum) addresses, and renames them to lowercase.
+ * This script scans all logo files in the assets directory and renames
+ * any files with uppercase characters in their names to lowercase.
  * 
- * This ensures consistency across the project for logo filenames.
+ * It helps ensure consistency across the codebase by enforcing the
+ * standard that all token addresses (and thus logo filenames) should
+ * be in lowercase format.
+ * 
+ * Usage:
+ *   node fix-logo-addresses.js             # Rename all uppercase logo files to lowercase
+ *   node fix-logo-addresses.js --dry-run   # Show what would be renamed without making changes
  */
 
 const fs = require('fs');
 const path = require('path');
 
 // Configuration
-const ASSETS_DIR = path.resolve(__dirname, '../assets');
-const LOGOS_DIR = 'logos';
+const REPO_ROOT = path.resolve(__dirname, '../');
+const ASSETS_DIR = path.join(REPO_ROOT, 'assets');
+const LOGOS_DIR_NAME = 'logos';
 const DRY_RUN = process.argv.includes('--dry-run');
 
 // Stats tracking
 const stats = {
-  processedDirectories: 0,
-  totalLogoFiles: 0,
-  renamedFiles: 0,
+  directoriesProcessed: 0,
+  filesScanned: 0,
+  filesRenamed: 0,
   errors: 0
 };
 
 /**
- * Converts an address to lowercase
- * @param {string} address - Token address
- * @returns {string} - Lowercase address
+ * Checks if a filename has uppercase characters (excluding file extension)
+ * @param {string} filename - Filename to check
+ * @returns {boolean} - True if filename has uppercase characters
  */
-function normalizeAddress(address) {
-  if (!address) return address;
-  return address.toLowerCase();
+function hasUppercase(filename) {
+  // Extract the part of the filename without extension (assumed to be an address)
+  const address = path.parse(filename).name;
+  
+  // Check if the address has uppercase characters
+  return address.toLowerCase() !== address;
 }
 
 /**
- * Processes logo files in a directory
- * @param {string} logosDir - Logos directory path
+ * Processes a logos directory, renaming any uppercase logo files to lowercase
+ * @param {string} logosDir - Path to the logos directory
  */
-function processLogoDirectory(logosDir) {
-  console.log(`\nProcessing directory: ${logosDir}`);
-  
+function processLogosDirectory(logosDir) {
   try {
-    stats.processedDirectories++;
+    console.log(`Processing directory: ${logosDir}`);
+    stats.directoriesProcessed++;
     
-    // Get all PNG files in the directory
-    const logoFiles = fs.readdirSync(logosDir)
-      .filter(file => file.endsWith('.png'));
+    // Get all files in the logos directory
+    const files = fs.readdirSync(logosDir);
     
-    stats.totalLogoFiles += logoFiles.length;
-    
-    // Process each logo file
-    for (const logoFile of logoFiles) {
-      try {
-        // Skip files that are already lowercase
-        if (logoFile === logoFile.toLowerCase()) {
-          continue;
-        }
+    for (const file of files) {
+      stats.filesScanned++;
+      
+      // Skip if not a PNG file
+      if (!file.toLowerCase().endsWith('.png')) {
+        continue;
+      }
+      
+      // Check if the filename has uppercase characters
+      if (hasUppercase(file)) {
+        const oldPath = path.join(logosDir, file);
+        const newPath = path.join(logosDir, file.toLowerCase());
         
-        // Extract the address part (remove .png extension)
-        const address = logoFile.slice(0, -4);
-        const lowercaseAddress = normalizeAddress(address);
-        
-        // If the address is not the same in lowercase, rename the file
-        if (lowercaseAddress !== address) {
-          const sourcePath = path.join(logosDir, logoFile);
-          const targetPath = path.join(logosDir, `${lowercaseAddress}.png`);
-          
-          console.log(`Renaming: ${logoFile} -> ${lowercaseAddress}.png`);
-          
-          if (!DRY_RUN) {
-            fs.renameSync(sourcePath, targetPath);
+        if (DRY_RUN) {
+          console.log(`Would rename: ${file} -> ${file.toLowerCase()}`);
+          stats.filesRenamed++;
+        } else {
+          try {
+            fs.renameSync(oldPath, newPath);
+            console.log(`Renamed: ${file} -> ${file.toLowerCase()}`);
+            stats.filesRenamed++;
+          } catch (error) {
+            console.error(`Error renaming ${file}: ${error.message}`);
+            stats.errors++;
           }
-          
-          stats.renamedFiles++;
         }
-      } catch (error) {
-        console.error(`Error processing file ${logoFile}: ${error.message}`);
-        stats.errors++;
       }
     }
   } catch (error) {
@@ -92,47 +95,54 @@ function processLogoDirectory(logosDir) {
  * Main function
  */
 async function main() {
-  console.log('Token Logo Address Normalizer');
-  console.log('============================');
-  console.log(DRY_RUN ? 'DRY RUN MODE - No files will be modified' : 'LIVE MODE - Files will be renamed');
+  console.log(`${DRY_RUN ? '[DRY RUN] ' : ''}Logo Address Fixer`);
+  console.log('=========================================');
   
   try {
-    // Get all chain directories in assets
-    const chainDirs = fs.readdirSync(ASSETS_DIR)
-      .filter(dir => {
-        const fullPath = path.join(ASSETS_DIR, dir);
-        return fs.statSync(fullPath).isDirectory() && /^\d+$/.test(dir);
-      });
+    // Check if assets directory exists
+    if (!fs.existsSync(ASSETS_DIR)) {
+      throw new Error(`Assets directory not found: ${ASSETS_DIR}`);
+    }
     
-    // Process each chain directory
+    // Get all chain directories
+    const chainDirs = fs.readdirSync(ASSETS_DIR);
+    
     for (const chainDir of chainDirs) {
-      const logosDir = path.join(ASSETS_DIR, chainDir, LOGOS_DIR);
+      const chainPath = path.join(ASSETS_DIR, chainDir);
       
+      // Skip if not a directory
+      if (!fs.statSync(chainPath).isDirectory()) {
+        continue;
+      }
+      
+      // Check if logos directory exists for this chain
+      const logosDir = path.join(chainPath, LOGOS_DIR_NAME);
       if (fs.existsSync(logosDir)) {
-        processLogoDirectory(logosDir);
+        processLogosDirectory(logosDir);
       }
     }
     
     // Print summary
-    console.log('\nProcessing Complete!');
-    console.log('===================');
-    console.log(`Directories processed: ${stats.processedDirectories}`);
-    console.log(`Total logo files: ${stats.totalLogoFiles}`);
-    console.log(`Files renamed to lowercase: ${stats.renamedFiles}`);
-    console.log(`Errors encountered: ${stats.errors}`);
+    console.log('\nSummary:');
+    console.log(`Directories processed: ${stats.directoriesProcessed}`);
+    console.log(`Files scanned: ${stats.filesScanned}`);
+    console.log(`Files ${DRY_RUN ? 'to be ' : ''}renamed: ${stats.filesRenamed}`);
+    console.log(`Errors: ${stats.errors}`);
     
-    if (DRY_RUN) {
-      console.log('\nThis was a dry run. Run without --dry-run to apply changes.');
+    if (DRY_RUN && stats.filesRenamed > 0) {
+      console.log('\nThis was a dry run. To actually rename the files, run:');
+      console.log('node scripts/fix-logo-addresses.js');
     }
     
+    console.log('\nDone!');
   } catch (error) {
-    console.error(`Unexpected error: ${error.message}`);
+    console.error(`Error: ${error.message}`);
     process.exit(1);
   }
 }
 
 // Run the script
 main().catch(err => {
-  console.error('Error:', err);
+  console.error('Unexpected error:', err);
   process.exit(1);
 }); 
