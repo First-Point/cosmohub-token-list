@@ -26,22 +26,6 @@
     },
     {
       "chainId": 43113,
-      "address": "0x2058ec2791dd28b6f67db836ddf87534f4bbdf22",
-      "name": "The Fuji stablecoin",
-      "symbol": "FUJISTABLE",
-      "decimals": 6,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43113/logos/0x2058ec2791dd28b6f67db836ddf87534f4bbdf22.png"
-    },
-    {
-      "chainId": 43113,
-      "address": "0x97132c109c6816525f7f338dcb7435e1412a7668",
-      "name": "To the Moon",
-      "symbol": "FUJIMOON",
-      "decimals": 9,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43113/logos/0x97132c109c6816525f7f338dcb7435e1412a7668.png"
-    },
-    {
-      "chainId": 43113,
       "address": "0xf561800ededf4ce146ed427cacf1fb8ab3b2d452",
       "name": "Wrapped WAGMI",
       "symbol": "WWAGMI",
