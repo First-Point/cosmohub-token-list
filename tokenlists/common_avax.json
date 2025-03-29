@@ -2,254 +2,6 @@
   "tokens": [
     {
       "chainId": 43114,
-      "address": "0x8b82A291F83ca07Af22120ABa21632088fC92931",
-      "name": "Ether (Portal)",
-      "symbol": "ETH",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x8b82A291F83ca07Af22120ABa21632088fC92931.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x12AF5C1a232675f62F405b5812A80e7a6F75D746",
-      "name": "ROSE (Portal)",
-      "symbol": "ROSE",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x12AF5C1a232675f62F405b5812A80e7a6F75D746.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x23cD2E6b283754Fd2340a75732f9DdBb5d11807e",
-      "name": "EverRise NFT Stakes",
-      "symbol": "nftRISE",
-      "decimals": 0,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x23cD2E6b283754Fd2340a75732f9DdBb5d11807e.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x98a4d09036Cc5337810096b1D004109686E56Afc",
-      "name": "PancakeSwap Token (Portal)",
-      "symbol": "CAKE",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x98a4d09036Cc5337810096b1D004109686E56Afc.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x442F7f22b1EE2c842bEAFf52880d4573E9201158",
-      "name": "Binance Coin (Portal)",
-      "symbol": "BNB",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x442F7f22b1EE2c842bEAFf52880d4573E9201158.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x0950Fc1AD509358dAeaD5eB8020a3c7d8b43b9DA",
-      "name": "USD Coin (Portal from Solana)",
-      "symbol": "USDCso",
-      "decimals": 6,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x0950Fc1AD509358dAeaD5eB8020a3c7d8b43b9DA.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x6145E8a910aE937913426BF32De2b26039728ACF",
-      "name": "USD Coin (Portal from BSC)",
-      "symbol": "USDCbs",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x6145E8a910aE937913426BF32De2b26039728ACF.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x60781C2586D68229fde47564546784ab3fACA982",
-      "name": "Pangolin",
-      "symbol": "PNG",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x60781C2586D68229fde47564546784ab3fACA982.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x70928E5B188def72817b7775F0BF6325968e563B",
-      "name": "LUNA (Portal)",
-      "symbol": "LUNA",
-      "decimals": 6,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x70928E5B188def72817b7775F0BF6325968e563B.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x543672E9CBEC728CBBa9C3Ccd99ed80aC3607FA8",
-      "name": "USD Coin (PoS) (Portal from Polygon)",
-      "symbol": "USDCpo",
-      "decimals": 6,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x543672E9CBEC728CBBa9C3Ccd99ed80aC3607FA8.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xA67BCC0D06d7d13A13A2AE30bF30f1B434f5a28B",
-      "name": "Tether USD (Portal from BSC)",
-      "symbol": "USDTbs",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xA67BCC0D06d7d13A13A2AE30bF30f1B434f5a28B.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xA41a6c7E25DdD361343e8Cb8cFa579bbE5eEdb7a",
-      "name": "Binance USD (Portal from BSC)",
-      "symbol": "BUSDbs",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xA41a6c7E25DdD361343e8Cb8cFa579bbE5eEdb7a.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xB0a6e056B587D0a85640b39b1cB44086F7a26A1E",
-      "name": "Oddz",
-      "symbol": "ODDZ",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xB0a6e056B587D0a85640b39b1cB44086F7a26A1E.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xB24CA28D4e2742907115fECda335b40dbda07a4C",
-      "name": "USD Coin (Portal from Ethereum)",
-      "symbol": "USDCet",
-      "decimals": 6,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xB24CA28D4e2742907115fECda335b40dbda07a4C.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xb599c3590F42f8F995ECfa0f85D2980B76862fc1",
-      "name": "UST (Portal)",
-      "symbol": "UST",
-      "decimals": 6,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xb599c3590F42f8F995ECfa0f85D2980B76862fc1.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xbBD7B847C6d0d0B5691518a363194D71426475F1",
-      "name": "EverRise Rewards",
-      "symbol": "claimRISE",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xbBD7B847C6d0d0B5691518a363194D71426475F1.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xC17c30e98541188614dF99239cABD40280810cA3",
-      "name": "EverRise",
-      "symbol": "RISE",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xC17c30e98541188614dF99239cABD40280810cA3.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xd039C9079ca7F2a87D632A9C0d7cEa0137bAcFB5",
-      "name": "Ape-X",
-      "symbol": "APE-X",
-      "decimals": 9,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xd039C9079ca7F2a87D632A9C0d7cEa0137bAcFB5.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xDbA7b24257fC6e397cB7368B4BC922E944072f1b",
-      "name": "Vote-escrowed EverRise",
-      "symbol": "veRISE",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xDbA7b24257fC6e397cB7368B4BC922E944072f1b.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xF0FF231e3F1A50F83136717f287ADAB862f89431",
-      "name": "Tether USD (Portal from Solana)",
-      "symbol": "USDTso",
-      "decimals": 6,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xF0FF231e3F1A50F83136717f287ADAB862f89431.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xF2F7CE610a091B94d41D69f4fF1129434a82E2f0",
-      "name": "Galaxy Goggle",
-      "symbol": "GG",
-      "decimals": 9,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xF2F7CE610a091B94d41D69f4fF1129434a82E2f0.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xf2f13f0B7008ab2FA4A2418F4ccC3684E49D20Eb",
-      "name": "MATIC (Portal from Polygon)",
-      "symbol": "MATICpo",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xf2f13f0B7008ab2FA4A2418F4ccC3684E49D20Eb.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xFE6B19286885a4F7F55AdAD09C3Cd1f906D2478F",
-      "name": "SOL (Portal)",
-      "symbol": "SOL",
-      "decimals": 9,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xFE6B19286885a4F7F55AdAD09C3Cd1f906D2478F.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xc7198437980c041c805A1EDcbA50c1Ce5db95118",
-      "name": "Tether USD",
-      "symbol": "USDT.e",
-      "decimals": 6,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xc7198437980c041c805A1EDcbA50c1Ce5db95118.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
-      "name": "TetherToken",
-      "symbol": "USDt",
-      "decimals": 6,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
-      "name": "USD Coin",
-      "symbol": "USDC",
-      "decimals": 6,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664",
-      "name": "USD Coin",
-      "symbol": "USDC.e",
-      "decimals": 6,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x19860CCB0A68fd4213aB9D8266F7bBf05A8dDe98",
-      "name": "Binance USD",
-      "symbol": "BUSD.e",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x19860CCB0A68fd4213aB9D8266F7bBf05A8dDe98.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70",
-      "name": "Dai Stablecoin",
-      "symbol": "DAI.e",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xd586E7F844cEa2F87f50152665BCbc2C279D8d70.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x50b7545627a5162F82A992c33b87aDc75187B218",
-      "name": "Wrapped BTC",
-      "symbol": "WBTC.e",
-      "decimals": 8,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x50b7545627a5162F82A992c33b87aDc75187B218.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x02D980A0D7AF3fb7Cf7Df8cB35d9eDBCF355f665",
-      "name": "SHIBA INU",
-      "symbol": "SHIB.e",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x02D980A0D7AF3fb7Cf7Df8cB35d9eDBCF355f665.png"
-    },
-    {
-      "chainId": 43114,
       "address": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
       "name": "Wrapped AVAX",
       "symbol": "WAVAX",
@@ -258,203 +10,27 @@
     },
     {
       "chainId": 43114,
-      "address": "0x5947BB275c521040051D82396192181b413227A3",
-      "name": "Chainlink Token",
-      "symbol": "LINK.e",
+      "address": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+      "name": "USDC Token",
+      "symbol": "USDC",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70",
+      "name": "DAI.e Token",
+      "symbol": "DAI.e",
       "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x5947BB275c521040051D82396192181b413227A3.png"
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xd586E7F844cEa2F87f50152665BCbc2C279D8d70.png"
     },
     {
       "chainId": 43114,
       "address": "0x8eBAf22B6F053dFFeaf46f4Dd9eFA95D89ba8580",
-      "name": "Uniswap",
+      "name": "UNI.e Token",
       "symbol": "UNI.e",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x8eBAf22B6F053dFFeaf46f4Dd9eFA95D89ba8580.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64",
-      "name": "Frax",
-      "symbol": "FRAX",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x1C20E891Bab6b1727d14Da358FAe2984Ed9B59EB",
-      "name": "TrueUSD",
-      "symbol": "TUSD",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x1C20E891Bab6b1727d14Da358FAe2984Ed9B59EB.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x63a72806098Bd3D9520cC43356dD78afe5D386D9",
-      "name": "Aave Token",
-      "symbol": "AAVE.e",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x63a72806098Bd3D9520cC43356dD78afe5D386D9.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xcf799767d366d789e8B446981C2D578E241fa25c",
-      "name": "Decentralized USD",
-      "symbol": "USDD",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xcf799767d366d789e8B446981C2D578E241fa25c.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x88128fd4b259552A9A1D457f435a6527AAb72d42",
-      "name": "Maker",
-      "symbol": "MKR.e",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x88128fd4b259552A9A1D457f435a6527AAb72d42.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x8a0cAc13c7da965a312f08ea4229c37869e85cB9",
-      "name": "Graph Token",
-      "symbol": "GRT.e",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x8a0cAc13c7da965a312f08ea4229c37869e85cB9.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x98443B96EA4b0858FDF3219Cd13e98C7A4690588",
-      "name": "Basic Attention Token",
-      "symbol": "BAT.e",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x98443B96EA4b0858FDF3219Cd13e98C7A4690588.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xd501281565bf7789224523144Fe5D98e8B28f267",
-      "name": "1INCH Token",
-      "symbol": "1INCH.e",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xd501281565bf7789224523144Fe5D98e8B28f267.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x249848BeCA43aC405b8102Ec90Dd5F22CA513c06",
-      "name": "Curve DAO Token",
-      "symbol": "CRV.e",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x249848BeCA43aC405b8102Ec90Dd5F22CA513c06.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xc3048E19E76CB9a3Aa9d77D8C03c29Fc906e2437",
-      "name": "Compound",
-      "symbol": "COMP.e",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xc3048E19E76CB9a3Aa9d77D8C03c29Fc906e2437.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x596fA47043f99A4e0F122243B841E55375cdE0d2",
-      "name": "ZRX",
-      "symbol": "ZRX.e",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x596fA47043f99A4e0F122243B841E55375cdE0d2.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xBeC243C995409E6520D7C41E404da5dEba4b209B",
-      "name": "Synthetix Network Token",
-      "symbol": "SNX.e",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xBeC243C995409E6520D7C41E404da5dEba4b209B.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x3Bd2B1c7ED8D396dbb98DED3aEbb41350a5b2339",
-      "name": "UMA Voting Token v1",
-      "symbol": "UMA.e",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x3Bd2B1c7ED8D396dbb98DED3aEbb41350a5b2339.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x9eAaC1B23d935365bD7b542Fe22cEEe2922f52dc",
-      "name": "yearn.finance",
-      "symbol": "YFI.e",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x9eAaC1B23d935365bD7b542Fe22cEEe2922f52dc.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x39fC9e94Caeacb435842FADeDeCB783589F50f5f",
-      "name": "Kyber Network Crystal v2",
-      "symbol": "KNC",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x39fC9e94Caeacb435842FADeDeCB783589F50f5f.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x37B608519F91f70F2EeB0e5Ed9AF4061722e4F76",
-      "name": "SushiToken",
-      "symbol": "SUSHI.e",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x37B608519F91f70F2EeB0e5Ed9AF4061722e4F76.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x340fE1D898ECCAad394e2ba0fC1F93d27c7b717A",
-      "name": "Orbs",
-      "symbol": "ORBS",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x340fE1D898ECCAad394e2ba0fC1F93d27c7b717A.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x5fC17416925789E0852FBFcd81c490ca4abc51F9",
-      "name": "inSure",
-      "symbol": "SURE",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x5fC17416925789E0852FBFcd81c490ca4abc51F9.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xCE1bFFBD5374Dac86a2893119683F4911a2F7814",
-      "name": "Spell Token",
-      "symbol": "SPELL",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xCE1bFFBD5374Dac86a2893119683F4911a2F7814.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x214DB107654fF987AD859F34125307783fC8e387",
-      "name": "Frax Share",
-      "symbol": "FXS",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x214DB107654fF987AD859F34125307783fC8e387.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xB44a9B6905aF7c801311e8F4E76932ee959c663C",
-      "name": "Anyswap",
-      "symbol": "ANY",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xB44a9B6905aF7c801311e8F4E76932ee959c663C.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x2147EFFF675e4A4eE1C2f918d181cDBd7a8E208f",
-      "name": "AlphaToken",
-      "symbol": "ALPHA.e",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x2147EFFF675e4A4eE1C2f918d181cDBd7a8E208f.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xd6070ae98b8069de6B494332d1A1a81B6179D960",
-      "name": "beefy.finance",
-      "symbol": "BIFI",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xd6070ae98b8069de6B494332d1A1a81B6179D960.png"
     },
     {
       "chainId": 43114,
@@ -463,6 +39,30 @@
       "symbol": "GMX",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x62edc0692BD897D2295872a9FFCac5425011c661.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xC891EB4cbdEFf6e073e859e987815Ed1505c2ACD",
+      "name": "Euro Coin",
+      "symbol": "EURC",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xC891EB4cbdEFf6e073e859e987815Ed1505c2ACD.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
+      "name": "LayerZero",
+      "symbol": "ZRO",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x6985884C4392D348587B19cb9eAAf157F13271cd.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xc4B06F17ECcB2215a5DBf042C672101Fc20daF55",
+      "name": "Flux",
+      "symbol": "FLUX",
+      "decimals": 8,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xc4B06F17ECcB2215a5DBf042C672101Fc20daF55.png"
     },
     {
       "chainId": 43114,
@@ -495,6 +95,14 @@
       "symbol": "JOE",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x6e84a6216ea6dacc71ee8e6b0a5b7322eebc0fdd.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+      "name": "Tether Token",
+      "symbol": "USDT",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7.png"
     },
     {
       "chainId": 43114,
@@ -559,6 +167,14 @@
       "symbol": "sAVAX",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x2b2c81e08f1af8835a78bb2a90ae924ace0ea4be.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x60781c2586d68229fde47564546784ab3faca982",
+      "name": "Pangolin",
+      "symbol": "PNG",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x60781c2586d68229fde47564546784ab3faca982.png"
     },
     {
       "chainId": 43114,
@@ -866,6 +482,14 @@
     },
     {
       "chainId": 43114,
+      "address": "0xce1bffbd5374dac86a2893119683f4911a2f7814",
+      "name": "Spell Token",
+      "symbol": "SPELL",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xce1bffbd5374dac86a2893119683f4911a2f7814.png"
+    },
+    {
+      "chainId": 43114,
       "address": "0xb27c8941a7df8958a1778c0259f76d1f8b711c35",
       "name": "Kalao Token",
       "symbol": "KLO",
@@ -919,6 +543,14 @@
       "symbol": "HCT",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x45c13620b55c35a5f539d26e88247011eb10fdbd.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x214db107654ff987ad859f34125307783fc8e387",
+      "name": "Frax Share",
+      "symbol": "FXS",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x214db107654ff987ad859f34125307783fc8e387.png"
     },
     {
       "chainId": 43114,
@@ -1354,6 +986,38 @@
     },
     {
       "chainId": 43114,
+      "address": "0x63a72806098bd3d9520cc43356dd78afe5d386d9",
+      "name": "Aave Token",
+      "symbol": "AAVE.e",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x63a72806098bd3d9520cc43356dd78afe5d386d9.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x5947bb275c521040051d82396192181b413227a3",
+      "name": "Chainlink Token",
+      "symbol": "LINK.e",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x5947bb275c521040051d82396192181b413227a3.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x37b608519f91f70f2eeb0e5ed9af4061722e4f76",
+      "name": "SushiToken",
+      "symbol": "SUSHI.e",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x37b608519f91f70f2eeb0e5ed9af4061722e4f76.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x50b7545627a5162f82a992c33b87adc75187b218",
+      "name": "Wrapped BTC",
+      "symbol": "WBTC.e",
+      "decimals": 8,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x50b7545627a5162f82a992c33b87adc75187b218.png"
+    },
+    {
+      "chainId": 43114,
       "address": "0x00ee200df31b869a321b10400da10b561f3ee60d",
       "name": "Arable Protocol",
       "symbol": "ACRE",
@@ -1375,6 +1039,14 @@
       "symbol": "AGF",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xb67a9374da03d4114a6fb8f0e7f2b82b5cb34ee3.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xb0a6e056b587d0a85640b39b1cb44086f7a26a1e",
+      "name": "OddzToken",
+      "symbol": "ODDZ",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xb0a6e056b587d0a85640b39b1cb44086f7a26a1e.png"
     },
     {
       "chainId": 43114,
@@ -1546,11 +1218,35 @@
     },
     {
       "chainId": 43114,
+      "address": "0xc7198437980c041c805a1edcba50c1ce5db95118",
+      "name": "Tether USD",
+      "symbol": "USDT.e",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xc7198437980c041c805a1edcba50c1ce5db95118.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664",
+      "name": "USD Coin",
+      "symbol": "USDC.e",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664.png"
+    },
+    {
+      "chainId": 43114,
       "address": "0x564a341df6c126f90cf3ecb92120fd7190acb401",
       "name": "BiLira",
       "symbol": "TRYB",
       "decimals": 6,
       "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x564a341df6c126f90cf3ecb92120fd7190acb401.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x19860ccb0a68fd4213ab9d8266f7bbf05a8dde98",
+      "name": "Binance USD",
+      "symbol": "BUSD.e",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x19860ccb0a68fd4213ab9d8266f7bbf05a8dde98.png"
     },
     {
       "chainId": 43114,
@@ -1583,6 +1279,14 @@
       "symbol": "AVAI",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x346a59146b9b4a77100d369a3d18e8007a9f46a6.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xd24c2ad096400b6fbcd2ad8b24e7acbc21a1da64",
+      "name": "Frax",
+      "symbol": "FRAX",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xd24c2ad096400b6fbcd2ad8b24e7acbc21a1da64.png"
     },
     {
       "chainId": 43114,
@@ -1631,6 +1335,14 @@
       "symbol": "JPYC",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x431d5dff03120afa4bdf332c61a6e1766ef37bdb.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xb599c3590f42f8f995ecfa0f85d2980b76862fc1",
+      "name": "Wormhole UST",
+      "symbol": "UST",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xb599c3590f42f8f995ecfa0f85d2980b76862fc1.png"
     },
     {
       "chainId": 43114,
@@ -1687,6 +1399,14 @@
       "symbol": "DGNX",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x51e48670098173025c477d9aa3f0eff7bf9f7812.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xcf799767d366d789e8b446981c2d578e241fa25c",
+      "name": "Decentralized USD",
+      "symbol": "USDD",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xcf799767d366d789e8b446981c2d578e241fa25c.png"
     },
     {
       "chainId": 43114,
@@ -1922,11 +1642,19 @@
     },
     {
       "chainId": 43114,
-      "address": "0x6985884c4392d348587b19cb9eaaf157f13271cd",
-      "name": "LayerZero",
-      "symbol": "ZRO",
+      "address": "0x88128fd4b259552a9a1d457f435a6527aab72d42",
+      "name": "Maker",
+      "symbol": "MKR",
       "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x6985884c4392d348587b19cb9eaaf157f13271cd.png"
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x88128fd4b259552a9a1d457f435a6527aab72d42.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x1c20e891bab6b1727d14da358fae2984ed9b59eb",
+      "name": "TrueUSD",
+      "symbol": "TUSD",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x1c20e891bab6b1727d14da358fae2984ed9b59eb.png"
     },
     {
       "chainId": 43114,
@@ -1954,11 +1682,19 @@
     },
     {
       "chainId": 43114,
-      "address": "0xc891eb4cbdeff6e073e859e987815ed1505c2acd",
-      "name": "EURC",
-      "symbol": "EURC",
-      "decimals": 6,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xc891eb4cbdeff6e073e859e987815ed1505c2acd.png"
+      "address": "0x8a0cac13c7da965a312f08ea4229c37869e85cb9",
+      "name": "The Graph",
+      "symbol": "GRT",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x8a0cac13c7da965a312f08ea4229c37869e85cb9.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x5fc17416925789e0852fbfcd81c490ca4abc51f9",
+      "name": "inSure DeFi",
+      "symbol": "SURE",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x5fc17416925789e0852fbfcd81c490ca4abc51f9.png"
     },
     {
       "chainId": 43114,
@@ -2031,14 +1767,6 @@
       "symbol": "BLUB",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0x0f669808d88b2b0b3d23214dcd2a1cc6a8b1b5cd.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xc4B06F17ECcB2215a5DBf042C672101Fc20daF55",
-      "name": "Flux",
-      "symbol": "FLUX",
-      "decimals": 8,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/main/assets/43114/logos/0xc4B06F17ECcB2215a5DBf042C672101Fc20daF55.png"
     }
   ]
 }

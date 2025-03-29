@@ -44,9 +44,5 @@ echo "Running TrustWallet token synchronization..."
 node sync-trustwallet.js
 cd ../..
 
-# Updating popular tokens based on market cap
-echo -e "\n=== Updating Popular Tokens Based on Market Cap ==="
-echo "Running popular token update script..."
-node update-popular-tokens.js
 
 echo -e "\n=== All token lists have been updated successfully! ===" 
