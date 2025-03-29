@@ -1,0 +1,27 @@
+{
+  "name": "cosmohub-token-list",
+  "version": "1.0.0",
+  "description": "Token list repository for multiple blockchain networks",
+  "main": "index.js",
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "test": "node scripts/test.js"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "avalanche",
+    "tokens",
+    "defi"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^6.10.0",
+    "fs-extra": "^11.2.0",
+    "glob": "^10.3.10",
+    "chalk": "^4.1.2",
+    "commander": "^12.0.0",
+    "ajv": "^8.12.0"
+  }
+} 

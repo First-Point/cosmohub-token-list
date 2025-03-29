@@ -1,165 +1,45 @@
-name: Validate Token List
+name: Validate Token Lists
 
 on:
-  pull_request:
+  push:
+    branches: [main]
     paths:
-      - "tokenlists/**"
-      - "images/**"
+      - 'assets/**/*.json'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'assets/**/*.json'
+  workflow_dispatch:  # Allow manual triggering
 
 jobs:
   validate:
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Node.js
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
-
+          node-version: '22.14.0'
+          cache: 'npm'
+      
       - name: Install dependencies
+        run: npm ci
+      
+      - name: Validate token lists
+        run: npm run validate
+      
+      - name: Run tests
+        run: npm run test
+      
+      - name: Check for formatting issues
         run: |
-          npm init -y
-          npm install ajv
-
-      - name: Validate JSON Structure
-        run: |
-          for file in tokenlists/*.json; do
-            if ! jq empty "$file" 2>/dev/null; then
-              echo "❌ Invalid JSON in $file"
-              exit 1
-            fi
-          done
-          echo "✅ All JSON files are valid"
-
-      - name: Check Required Fields and URL Format
-        run: |
-          cat > validate.js << 'EOF'
-          const fs = require('fs');
-          const Ajv = require('ajv');
-          const ajv = new Ajv();
-
-          const schema = {
-            type: "object",
-            required: ["tokens"],
-            properties: {
-              tokens: {
-                type: "array",
-                items: {
-                  type: "object",
-                  required: ["chainId", "address", "name", "symbol", "decimals", "logoURI"],
-                  properties: {
-                    chainId: { type: "number" },
-                    address: { type: "string" },
-                    name: { type: "string" },
-                    symbol: { type: "string" },
-                    decimals: { type: "number" },
-                    logoURI: { type: "string" }
-                  }
-                }
-              }
-            }
-          };
-
-          const validate = ajv.compile(schema);
-
-          const files = fs.readdirSync('tokenlists');
-          let hasError = false;
-
-          // URL validation function
-          function validateLogoURI(token, network) {
-            const expectedPattern = `https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/images/${network}/${token.address}.png`;
-            if (token.logoURI !== expectedPattern) {
-              console.log(`❌ Invalid logoURI format for ${token.symbol} (${token.address}) in ${network}`);
-              console.log(`Expected: ${expectedPattern}`);
-              console.log(`Found: ${token.logoURI}`);
-              return false;
-            }
-            return true;
-          }
-
-          files.forEach(file => {
-            if (file.endsWith('.json')) {
-              const data = JSON.parse(fs.readFileSync(`tokenlists/${file}`));
-              const valid = validate(data);
-              const network = file.includes('eth') ? 'eth' : 'avax';
-              
-              if (!valid) {
-                console.log(`❌ Validation failed for ${file}:`, validate.errors);
-                hasError = true;
-              } else {
-                // Validate chain IDs and URLs
-                data.tokens.forEach(token => {
-                  // Chain ID validation
-                  if (file.includes('eth') && token.chainId !== 1) {
-                    console.log(`❌ Invalid chainId in ${file}: ETH tokens must have chainId 1`);
-                    hasError = true;
-                  }
-                  if (file.includes('avax') && token.chainId !== 43114) {
-                    console.log(`❌ Invalid chainId in ${file}: AVAX tokens must have chainId 43114`);
-                    hasError = true;
-                  }
-                  
-                  // URL format validation
-                  if (!validateLogoURI(token, network)) {
-                    hasError = true;
-                  }
-                });
-              }
-            }
-          });
-
-          if (hasError) {
-            process.exit(1);
-          }
-          console.log('✅ All token lists are valid');
-          EOF
-
-          node validate.js
-
-      - name: Install ImageMagick
-        run: sudo apt-get update && sudo apt-get install -y imagemagick
-
-      - name: Validate Images
-        run: |
-          for img in images/*/*.png; do
-            # Check if file exists (skip if no matches found)
-            [ -e "$img" ] || continue
-            
-            # Get image dimensions
-            dimensions=$(identify -format "%wx%h" "$img")
-            if [ "$dimensions" != "120x120" ]; then
-              echo "❌ Invalid dimensions for $img: $dimensions (should be 120x120)"
-              exit 1
-            fi
-            
-            # Check file size (50KB = 51200 bytes)
-            size=$(stat -f%z "$img" 2>/dev/null || stat -c%s "$img")
-            if [ "$size" -gt 51200 ]; then
-              echo "❌ File size too large for $img: $size bytes (max 50KB)"
-              exit 1
-            fi
-            
-            # Verify PNG format and transparency
-            if ! identify "$img" | grep -q "PNG"; then
-              echo "❌ Invalid format for $img: must be PNG"
-              exit 1
-            fi
-          done
-          echo "✅ All images are valid"
-
-      - name: Verify Image Names Match Addresses
-        run: |
-          for file in tokenlists/*.json; do
-            network=$(basename "$file" .json | cut -d'_' -f2)
-            addresses=$(jq -r '.tokens[].address' "$file")
-            
-            while IFS= read -r address; do
-              image_path="images/$network/${address}.png"
-              if [ ! -f "$image_path" ]; then
-                echo "❌ Missing image for token $address in $network network"
-                exit 1
-              fi
-            done <<< "$addresses"
-          done
-          echo "✅ All token images exist and match addresses"
+          # Check if all JSON files are formatted with 2-space indentation
+          find assets -name "*.json" -type f -exec grep -L '  "tokens":' {} \; > unformatted.txt
+          if [ -s unformatted.txt ]; then
+            echo "The following files don't have 2-space indentation:"
+            cat unformatted.txt
+            exit 1
+          fi 

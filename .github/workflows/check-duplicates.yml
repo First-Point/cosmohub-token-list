@@ -1,0 +1,113 @@
+name: Check Cross-Chain Duplicates
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/**/*.json'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'assets/**/*.json'
+  workflow_dispatch:  # Allow manual triggering
+  schedule:
+    - cron: '0 0 * * 0'  # Run weekly at midnight on Sunday
+
+jobs:
+  check-duplicates:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.14.0'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Create duplicate check script
+        run: |
+          cat << 'EOL' > check-duplicates.js
+          /**
+           * Script to check for duplicate token addresses across different chain directories
+           * This helps identify tokens that might be incorrectly added to multiple chains
+           */
+          
+          const fs = require('fs-extra');
+          const path = require('path');
+          const { glob } = require('glob');
+          
+          async function checkDuplicates() {
+            // Get all token list files
+            const files = await glob('assets/**/common.json');
+            
+            // Track all token addresses with their chain IDs
+            const addressMap = new Map();
+            const duplicates = [];
+            
+            // Process each file
+            for (const file of files) {
+              const content = await fs.readJson(file);
+              const chainDir = path.dirname(file);
+              const chainId = path.basename(chainDir);
+              
+              // Check each token in the file
+              for (const token of content.tokens) {
+                const address = token.address.toLowerCase();
+                const key = `${address}`;
+                
+                if (addressMap.has(key)) {
+                  // This is a duplicate, but check if it's on the same chain
+                  const existing = addressMap.get(key);
+                  
+                  // If it's on a different chain, report it
+                  if (existing.chainId !== chainId) {
+                    duplicates.push({
+                      address: token.address,
+                      symbol: token.symbol,
+                      chains: [existing.chainId, chainId]
+                    });
+                  }
+                } else {
+                  // Add to the map
+                  addressMap.set(key, {
+                    chainId: chainId,
+                    symbol: token.symbol
+                  });
+                }
+              }
+            }
+            
+            // Report any duplicates
+            if (duplicates.length > 0) {
+              console.log('⚠️ Warning: Found tokens with the same address across multiple chains:');
+              console.log('-'.repeat(80));
+              
+              for (const dup of duplicates) {
+                console.log(`Token: ${dup.symbol} (${dup.address})`);
+                console.log(`Chains: ${dup.chains.join(', ')}`);
+                console.log('-'.repeat(40));
+              }
+              
+              console.log('\nThis might indicate an error in the token list. Please verify these tokens.');
+              
+              // We don't fail the build, just warn
+              process.exit(0);
+            } else {
+              console.log('✅ No cross-chain duplicate addresses found.');
+            }
+          }
+          
+          checkDuplicates().catch(err => {
+            console.error('Error:', err);
+            process.exit(1);
+          });
+          EOL
+      
+      - name: Run duplicate check
+        run: node check-duplicates.js 

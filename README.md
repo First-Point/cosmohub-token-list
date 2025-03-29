@@ -1,89 +1,105 @@
-# Cosmohub Token List
+# CosmosHub Token List
 
-This repository contains the token lists used by [Cosmohub](https://cosmohub.ai) for various blockchain networks. It serves as a central source of truth for token information and metadata across different chains.
+This repository contains the official token list for [Cosmohub.ai](https://cosmohub.ai/) - a blockchain AI agent marketplace for DeFi and gaming. The token lists are organized by blockchain networks and provide standardized information for various tokens used within the Cosmohub ecosystem.
 
-## Supported Networks
+A comprehensive token list repository for multiple blockchain networks. This repository contains standardized token information for various chains, organized by chain ID.
 
-Currently, we support the following networks:
+## Structure
 
-- Ethereum (ETH)
-- Avalanche (AVAX)
-
-## Directory Structure
+The repository is organized by chain ID, with each chain having its own directory containing token lists:
 
 ```
-cosmohub-token-list/
-│── tokenlists/           # JSON files containing token information
-│   ├── common_eth.json   # Ethereum tokens
-│   ├── common_avax.json  # Avalanche tokens
-│── images/               # Token logos
-│   ├── eth/             # Ethereum token images
-│   ├── avax/            # Avalanche token images
+assets/
+└── <chainId>/
+    ├── common.json     # All tokens (detailed list)
+    ├── popular.json    # Popular tokens (subset, same format)
+    └── logos/          # Token logo images
 ```
 
-## Token List Schema
+## Token Format
 
-Each token list file contains an array of tokens with the following structure:
+Each token entry includes the following fields:
 
 ```json
 {
-  "tokens": [
-    {
-      "chainId": 1, // The chain ID of the network
-      "address": "0x...", // The token contract address
-      "name": "Token Name", // The name of the token
-      "symbol": "TKN", // The token symbol
-      "decimals": 18, // The number of decimals for the token
-      "logoURI": "https://..." // URL to the token logo
-    }
-  ]
+  "chainId": 43114,     // Chain ID (number)
+  "address": "0x5b...", // Token contract address (lowercase)
+  "name": "Token Name", // Token name (string)
+  "symbol": "TKN",      // Token symbol (string)
+  "decimals": 18,       // Decimal precision (integer)
+  "logoURI": "./logos/0x5b....png" // Path to token logo image
 }
 ```
 
-### Chain IDs
+## Supported Networks
 
-- Ethereum (ETH): 1
-- Avalanche (AVAX): 43114
+The following blockchain networks are currently supported:
 
-## Image Requirements
+| Network | Chain ID | Description |
+|---------|----------|-------------|
+| Ethereum | 1 | Ethereum Mainnet |
+| Avalanche | 43114 | Avalanche C-Chain Mainnet |
+| Avalanche Fuji | 43113 | Avalanche Fuji Testnet |
 
-- Format: PNG
-- Background: Transparent
-- Dimensions: 120x120 pixels
-- File naming: `{token_address}.png`
-- Location: Place in the corresponding network folder under `images/`
+## Using the Package
 
-## How to Contribute
+### Installation
 
-1. Fork this repository
+```bash
+npm install cosmohub-token-list
+```
+
+### Usage Examples
+
+```javascript
+const tokenList = require('cosmohub-token-list');
+
+// Get all supported chain IDs
+const chainIds = await tokenList.getChainIds();
+
+// Get all tokens for Ethereum
+const ethereumTokens = await tokenList.getTokens(1);
+
+// Get popular tokens for Avalanche
+const avalanchePopularTokens = await tokenList.getPopularTokens(43114);
+
+// Get a specific token by address
+const usdcToken = await tokenList.getTokenByAddress(43114, '0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e');
+
+// Check if a token exists
+const exists = await tokenList.hasToken(43114, '0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e');
+```
+
+## Features
+
+- **Comprehensive Token Lists**: Detailed information for thousands of tokens across multiple networks
+- **Popular Token Selection**: Curated lists of the most important tokens for each network
+- **Standardized Format**: Consistent token data structure across all chains
+- **High-Quality Logos**: All tokens include high-resolution logo images
+- **Regular Updates**: Token lists are regularly maintained and updated
+- **Validation**: All token data is validated for accuracy and completeness
+
+## Validation and Quality Control
+
+All token lists in this repository go through rigorous validation to ensure:
+
+- Valid JSON structure with required fields
+- Correct token contract addresses (lowercase format)
+- Accurate token information (name, symbol, decimals)
+- Existence and validity of logo images
+- No duplicate tokens within a network
+- Proper subset relationships between popular and common token lists
+
+## Contributing
+
+To add or update tokens, please follow these steps:
+
+1. Fork the repository
 2. Create a new branch for your changes
-3. Add your token information to the appropriate JSON file
-4. Add your token logo to the correct network folder
-5. Ensure your changes meet our requirements
-6. Submit a pull request
-
-For detailed contribution guidelines, please see [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Validation
-
-Before submitting a pull request, please ensure:
-
-- Your JSON files are properly formatted and valid
-- Token logos meet the specified requirements
-- All required fields are present in token entries
-- The token contract address is valid and verified
+3. Make your changes (add/update tokens)
+4. Ensure all validation checks pass
+5. Submit a pull request
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For questions, issues, or suggestions:
-
-- Open an issue in this repository
-- Contact the Cosmohub team through our official channels
-
-## Security
-
-If you discover any security-related issues, please email security@cosmohub.ai instead of using the issue tracker.
+[MIT License](LICENSE) 

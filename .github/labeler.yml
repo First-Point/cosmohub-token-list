@@ -1,0 +1,26 @@
+# Labels for the automatic labeler
+ethereum:
+  - assets/1/**/*
+
+avalanche:
+  - assets/43114/**/*
+
+avalanche-fuji:
+  - assets/43113/**/*
+
+documentation:
+  - "**/*.md"
+  - docs/**/*
+
+token-list:
+  - assets/**/*.json
+
+scripts:
+  - scripts/**/*
+
+workflow:
+  - .github/**/*
+
+dependencies:
+  - package.json
+  - package-lock.json 

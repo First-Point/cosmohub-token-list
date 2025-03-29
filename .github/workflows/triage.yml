@@ -1,0 +1,54 @@
+name: Issue and PR Triage
+
+on:
+  issues:
+    types: [opened, labeled, unlabeled]
+  pull_request:
+    types: [opened, labeled, unlabeled]
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@v4
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: .github/labeler.yml
+          sync-labels: true
+
+  validate_pr_content:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Check if PR modifies allowed files only
+        run: |
+          # Get list of changed files
+          CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
+          
+          # Check if only token files are modified
+          INVALID_FILES=""
+          
+          for file in $CHANGED_FILES; do
+            # Allow changes to assets folder JSON files
+            if [[ $file == assets/*/*.json ]]; then
+              continue
+            fi
+            
+            # Allow changes to README and docs
+            if [[ $file == *.md || $file == docs/* ]]; then
+              continue
+            fi
+            
+            # All other changes are potentially problematic
+            INVALID_FILES="$INVALID_FILES\n$file"
+          done
+          
+          if [[ ! -z "$INVALID_FILES" ]]; then
+            echo "⚠️ This PR modifies files outside of the allowed scope:"
+            echo -e "$INVALID_FILES"
+            echo "Changes to core scripts, workflows, or configuration files should be reviewed carefully."
+            # Don't fail the build, just warn
+          fi 
