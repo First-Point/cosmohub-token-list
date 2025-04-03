@@ -4031,6 +4031,38 @@
       "symbol": "PAN",
       "decimals": 18,
       "logoURI": "./logos/0xceba2a8f6ec221aeb5f3a7bcd15cbc7e6a387bfb.png"
+    },
+    {
+      "chainId": 1,
+      "address": "0x808507121b80c02388fad14726482e061b8da827",
+      "name": "Pendle",
+      "symbol": "PENDLE",
+      "decimals": 18,
+      "logoURI": "./logos/0x808507121b80c02388fad14726482e061b8da827.png"
+    },
+    {
+      "chainId": 1,
+      "address": "0x888883b5f5d21fb10dfeb70e8f9722b9fb0e5e51",
+      "name": "Schuman EUR P",
+      "symbol": "EUROP",
+      "decimals": 6,
+      "logoURI": "./logos/0x888883b5f5d21fb10dfeb70e8f9722b9fb0e5e51.png"
+    },
+    {
+      "chainId": 1,
+      "address": "0x4507cef57c46789ef8d1a19ea45f4216bae2b528",
+      "name": "TokenFi",
+      "symbol": "TOKEN",
+      "decimals": 9,
+      "logoURI": "./logos/0x4507cef57c46789ef8d1a19ea45f4216bae2b528.png"
+    },
+    {
+      "chainId": 1,
+      "address": "0xb1d1eae60eea9525032a6dcb4c1ce336a1de71be",
+      "name": "Derive",
+      "symbol": "DRV",
+      "decimals": 18,
+      "logoURI": "./logos/0xb1d1eae60eea9525032a6dcb4c1ce336a1de71be.png"
     }
   ]
 }
