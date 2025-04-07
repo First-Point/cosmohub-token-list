@@ -4063,6 +4063,62 @@
       "symbol": "DRV",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/1/logos/0xb1d1eae60eea9525032a6dcb4c1ce336a1de71be.png"
+    },
+    {
+      "chainId": 1,
+      "address": "0x0000000000000000000000000000000000000000",
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/1/logos/0x0000000000000000000000000000000000000000.png"
+    },
+    {
+      "chainId": 1,
+      "address": "0x2730d6fdc86c95a74253beffaa8306b40fedecbb",
+      "name": "UNICORN",
+      "symbol": "UNI",
+      "decimals": 8,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/1/logos/0x2730d6fdc86c95a74253beffaa8306b40fedecbb.png"
+    },
+    {
+      "chainId": 1,
+      "address": "0x4c1746a800d224393fe2470c70a35717ed4ea5f1",
+      "name": "Plume",
+      "symbol": "PLUME",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/1/logos/0x4c1746a800d224393fe2470c70a35717ed4ea5f1.png"
+    },
+    {
+      "chainId": 1,
+      "address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "name": "Wrapped stETH",
+      "symbol": "WSTETH",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/1/logos/0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0.png"
+    },
+    {
+      "chainId": 1,
+      "address": "0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa",
+      "name": "Mantle Staked Ether",
+      "symbol": "METH",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/1/logos/0xd5f7838f5c461feff7fe49ea5ebaf7728bb0adfa.png"
+    },
+    {
+      "chainId": 1,
+      "address": "0x046eee2cc3188071c02bfc1745a6b17c656e3f3d",
+      "name": "Rollbit Coin",
+      "symbol": "RLB",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/1/logos/0x046eee2cc3188071c02bfc1745a6b17c656e3f3d.png"
+    },
+    {
+      "chainId": 1,
+      "address": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+      "name": "Ethena USDe",
+      "symbol": "USDe",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/1/logos/0x4c9edd5852cd905f086c759e8383e09bff1e68b3.png"
     }
   ]
 }

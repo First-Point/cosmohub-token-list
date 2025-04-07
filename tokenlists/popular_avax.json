@@ -10,35 +10,11 @@
     },
     {
       "chainId": 43114,
-      "address": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
-      "name": "Wrapped AVAX",
-      "symbol": "WAVAX",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43114/logos/0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x8729438eb15e2c8b576fcc6aecda6a148776c0f5",
-      "name": "Benqi",
-      "symbol": "QI",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43114/logos/0x8729438eb15e2c8b576fcc6aecda6a148776c0f5.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x152b9d0fdc40c096757f570a51e494bd4b943e50",
-      "name": "Bitcoin (BTC.b)",
-      "symbol": "BTC.b",
-      "decimals": 8,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43114/logos/0x152b9d0fdc40c096757f570a51e494bd4b943e50.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x6e84a6216ea6dacc71ee8e6b0a5b7322eebc0fdd",
-      "name": "JOE token",
-      "symbol": "JOE",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43114/logos/0x6e84a6216ea6dacc71ee8e6b0a5b7322eebc0fdd.png"
+      "address": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43114/logos/0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e.png"
     },
     {
       "chainId": 43114,
@@ -50,11 +26,11 @@
     },
     {
       "chainId": 43114,
-      "address": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
-      "name": "USD Coin",
-      "symbol": "USDC",
-      "decimals": 6,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43114/logos/0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e.png"
+      "address": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43114/logos/0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7.png"
     },
     {
       "chainId": 43114,
@@ -66,59 +42,11 @@
     },
     {
       "chainId": 43114,
-      "address": "0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab",
-      "name": "Wrapped Ether",
-      "symbol": "WETH.e",
+      "address": "0x8b82a291f83ca07af22120aba21632088fc92931",
+      "name": "Wrapped Ether (Wormhole)",
+      "symbol": "WETH",
       "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43114/logos/0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xb8d7710f7d8349a506b75dd184f05777c82dad0c",
-      "name": "ArenaToken",
-      "symbol": "ARENA",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43114/logos/0xb8d7710f7d8349a506b75dd184f05777c82dad0c.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x00000000efe302beaa2b3e6e1b18d08d69a9012a",
-      "name": "AUSD",
-      "symbol": "AUSD",
-      "decimals": 6,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43114/logos/0x00000000efe302beaa2b3e6e1b18d08d69a9012a.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x420fca0121dc28039145009570975747295f2329",
-      "name": "COQINU (COQ)",
-      "symbol": "COQ",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43114/logos/0x420fca0121dc28039145009570975747295f2329.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xa80f36ba18c7f721f3f7acdbcdefd3a86869a036",
-      "name": "OFFICIAL TRUMP",
-      "symbol": "TRUMP",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43114/logos/0xa80f36ba18c7f721f3f7acdbcdefd3a86869a036.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0xffff003a6bad9b743d658048742935fffe2b6ed7",
-      "name": "yellow ket",
-      "symbol": "KET",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43114/logos/0xffff003a6bad9b743d658048742935fffe2b6ed7.png"
-    },
-    {
-      "chainId": 43114,
-      "address": "0x2b2c81e08f1af8835a78bb2a90ae924ace0ea4be",
-      "name": "Staked AVAX",
-      "symbol": "sAVAX",
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43114/logos/0x2b2c81e08f1af8835a78bb2a90ae924ace0ea4be.png"
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43114/logos/0x8b82a291f83ca07af22120aba21632088fc92931.png"
     }
   ]
 }

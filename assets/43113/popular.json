@@ -2,14 +2,6 @@
   "tokens": [
     {
       "chainId": 43113,
-      "address": "0xd00ae08403b9bbb9124bb305c09058e32c39a48c",
-      "name": "Wrapped AVAX",
-      "symbol": "WAVAX",
-      "decimals": 18,
-      "logoURI": "./logos/0xd00ae08403b9bbb9124bb305c09058e32c39a48c.png"
-    },
-    {
-      "chainId": 43113,
       "address": "0xb6076c93701d6a07266c31066b298aec6dd65c2d",
       "name": "USD Coin",
       "symbol": "USDC",
@@ -23,6 +15,14 @@
       "symbol": "USDT",
       "decimals": 6,
       "logoURI": "./logos/0xab231a5744c8e6c45481754928ccffffd4aa0732.png"
+    },
+    {
+      "chainId": 43113,
+      "address": "0xd00ae08403b9bbb9124bb305c09058e32c39a48c",
+      "name": "Wrapped AVAX",
+      "symbol": "WAVAX",
+      "decimals": 18,
+      "logoURI": "./logos/0xd00ae08403b9bbb9124bb305c09058e32c39a48c.png"
     }
   ]
 }

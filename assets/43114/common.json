@@ -2039,6 +2039,774 @@
       "symbol": "BIFI",
       "decimals": 18,
       "logoURI": "./logos/0xd6070ae98b8069de6b494332d1a1a81b6179d960.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x0256b279d973c8d687264ac3eb36be09232d4474",
+      "name": "MyStandard",
+      "symbol": "MYST",
+      "decimals": 18,
+      "logoURI": "./logos/0x0256b279d973c8d687264ac3eb36be09232d4474.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x05b0def5c00ba371683d7035934bcf82b737c364",
+      "name": "Kingshit X",
+      "symbol": "KINGSHIT.x",
+      "decimals": 18,
+      "logoURI": "./logos/0x05b0def5c00ba371683d7035934bcf82b737c364.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x06d47f3fb376649c3a9dafe069b3d6e35572219e",
+      "name": "Staked avUSD",
+      "symbol": "savUSD",
+      "decimals": 18,
+      "logoURI": "./logos/0x06d47f3fb376649c3a9dafe069b3d6e35572219e.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xfec5906e8470ea7e2a2242b314a35f4ff42b19e1",
+      "name": "Lamina1",
+      "symbol": "L1",
+      "decimals": 18,
+      "logoURI": "./logos/0xfec5906e8470ea7e2a2242b314a35f4ff42b19e1.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x096d19b58cab84a2f0ff0e81c08291bffaa62848",
+      "name": "Shoe404",
+      "symbol": "SHOE",
+      "decimals": 18,
+      "logoURI": "./logos/0x096d19b58cab84a2f0ff0e81c08291bffaa62848.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x0a10d108e2d81ccc793e37b56206c84bf96ddc57",
+      "name": "MXS GAMES",
+      "symbol": "XSEED",
+      "decimals": 18,
+      "logoURI": "./logos/0x0a10d108e2d81ccc793e37b56206c84bf96ddc57.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x0cd741f007b417088ca7f4392e8d6b49b4f7a975",
+      "name": "Kingshit",
+      "symbol": "KINGSHIT",
+      "decimals": 18,
+      "logoURI": "./logos/0x0cd741f007b417088ca7f4392e8d6b49b4f7a975.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x166738d2d75951a61e5e1f499c23103d0b7375f0",
+      "name": "SIENA AI",
+      "symbol": "SIENAI",
+      "decimals": 18,
+      "logoURI": "./logos/0x166738d2d75951a61e5e1f499c23103d0b7375f0.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x18e3605b13f10016901eac609b9e188cf7c18973",
+      "name": "HEFE",
+      "symbol": "HEFE",
+      "decimals": 18,
+      "logoURI": "./logos/0x18e3605b13f10016901eac609b9e188cf7c18973.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x1f1e7c893855525b303f99bdf5c3c05be09ca251",
+      "name": "Synapse",
+      "symbol": "SYN",
+      "decimals": 18,
+      "logoURI": "./logos/0x1f1e7c893855525b303f99bdf5c3c05be09ca251.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x1fcca65fb6ae3b2758b9b2b394cb227eae404e1e",
+      "name": "pumpBTC",
+      "symbol": "pumpBTC",
+      "decimals": 8,
+      "logoURI": "./logos/0x1fcca65fb6ae3b2758b9b2b394cb227eae404e1e.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x214dd1b5cbe543d4189ab39832f1bc1eedebb1d3",
+      "name": "JUNIOR",
+      "symbol": "JUNIOR",
+      "decimals": 9,
+      "logoURI": "./logos/0x214dd1b5cbe543d4189ab39832f1bc1eedebb1d3.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x223a368ad0e7396165fc629976d77596a51f155c",
+      "name": "GURS",
+      "symbol": "GURS",
+      "decimals": 18,
+      "logoURI": "./logos/0x223a368ad0e7396165fc629976d77596a51f155c.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x23675ba5d0a8075da5ba18756554e7633cea2c85",
+      "name": "Raini Studios Token",
+      "symbol": "RST",
+      "decimals": 18,
+      "logoURI": "./logos/0x23675ba5d0a8075da5ba18756554e7633cea2c85.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x245b532ad64c7fbfeec9aa42f37291b183cea91b",
+      "name": "SWOL ",
+      "symbol": "SWOL",
+      "decimals": 18,
+      "logoURI": "./logos/0x245b532ad64c7fbfeec9aa42f37291b183cea91b.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x24de8771bc5ddb3362db529fc3358f2df3a0e346",
+      "name": "avUSD",
+      "symbol": "avUSD",
+      "decimals": 18,
+      "logoURI": "./logos/0x24de8771bc5ddb3362db529fc3358f2df3a0e346.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x250bdca7d1845cd543bb55e7d82dca24d48e9f0f",
+      "name": "Dragon Crypto Argenti",
+      "symbol": "DCAR",
+      "decimals": 18,
+      "logoURI": "./logos/0x250bdca7d1845cd543bb55e7d82dca24d48e9f0f.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x2598c30330d5771ae9f983979209486ae26de875",
+      "name": "Any Inu",
+      "symbol": "AI",
+      "decimals": 18,
+      "logoURI": "./logos/0x2598c30330d5771ae9f983979209486ae26de875.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x25be3edd820a8fce6b8e211f40c5b82ba176994c",
+      "name": "iBTC",
+      "symbol": "iBTC",
+      "decimals": 8,
+      "logoURI": "./logos/0x25be3edd820a8fce6b8e211f40c5b82ba176994c.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x25f11e22d5079c2970496d592579bf4902d09d76",
+      "name": "Jigen",
+      "symbol": "JIGEN",
+      "decimals": 18,
+      "logoURI": "./logos/0x25f11e22d5079c2970496d592579bf4902d09d76.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x273819f7d9387ad17cbb77bea32cd293f9bc8cde",
+      "name": "MILLION",
+      "symbol": "MILLION",
+      "decimals": 18,
+      "logoURI": "./logos/0x273819f7d9387ad17cbb77bea32cd293f9bc8cde.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x2dc45b5377739aa47e1162f42ca591c1688bc647",
+      "name": "Yeet the Yeti",
+      "symbol": "YEET",
+      "decimals": 18,
+      "logoURI": "./logos/0x2dc45b5377739aa47e1162f42ca591c1688bc647.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x323665443cef804a3b5206103304bd4872ea4253",
+      "name": "USDV",
+      "symbol": "USDV",
+      "decimals": 6,
+      "logoURI": "./logos/0x323665443cef804a3b5206103304bd4872ea4253.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x3377aca4c0bfd021be6bd762b5f594975e77f9cf",
+      "name": "Cat wif Hands",
+      "symbol": "CATWIF",
+      "decimals": 18,
+      "logoURI": "./logos/0x3377aca4c0bfd021be6bd762b5f594975e77f9cf.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x3cc96f3cb4f45b5b5cdbce61faee8ae80d805c65",
+      "name": "AvaxMinerAI",
+      "symbol": "AvaxMinerAI",
+      "decimals": 18,
+      "logoURI": "./logos/0x3cc96f3cb4f45b5b5cdbce61faee8ae80d805c65.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x42006ab57701251b580bdfc24778c43c9ff589a1",
+      "name": "EVO",
+      "symbol": "EVO",
+      "decimals": 18,
+      "logoURI": "./logos/0x42006ab57701251b580bdfc24778c43c9ff589a1.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x42069000770c482fed048e1da03a5f82773abd69",
+      "name": "My Bro",
+      "symbol": "BRO",
+      "decimals": 18,
+      "logoURI": "./logos/0x42069000770c482fed048e1da03a5f82773abd69.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x4269b4d1f9d195b3a248e39bcc052958e91544f8",
+      "name": "FrainAI",
+      "symbol": "frAIn",
+      "decimals": 18,
+      "logoURI": "./logos/0x4269b4d1f9d195b3a248e39bcc052958e91544f8.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x432d38f83a50ec77c409d086e97448794cf76dcf",
+      "name": "Heresy",
+      "symbol": "HERESY",
+      "decimals": 18,
+      "logoURI": "./logos/0x432d38f83a50ec77c409d086e97448794cf76dcf.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x46b9144771cb3195d66e4eda643a7493fadcaf9d",
+      "name": "BloodLoop Shard",
+      "symbol": "BLS",
+      "decimals": 18,
+      "logoURI": "./logos/0x46b9144771cb3195d66e4eda643a7493fadcaf9d.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x47c3118ad183712acd42648e9e522e13690f29a0",
+      "name": "Meat",
+      "symbol": "MEAT",
+      "decimals": 6,
+      "logoURI": "./logos/0x47c3118ad183712acd42648e9e522e13690f29a0.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x4a5bb433132b7e7f75d6a9a3e4136bb85ce6e4d5",
+      "name": "Booty",
+      "symbol": "BOOTY",
+      "decimals": 18,
+      "logoURI": "./logos/0x4a5bb433132b7e7f75d6a9a3e4136bb85ce6e4d5.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x502580fc390606b47fc3b741d6d49909383c28a9",
+      "name": "HATCHY",
+      "symbol": "HATCHY",
+      "decimals": 18,
+      "logoURI": "./logos/0x502580fc390606b47fc3b741d6d49909383c28a9.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x5817d4f0b62a59b17f75207da1848c2ce75e7af4",
+      "name": "Vector",
+      "symbol": "VTX",
+      "decimals": 18,
+      "logoURI": "./logos/0x5817d4f0b62a59b17f75207da1848c2ce75e7af4.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x5b08fee76c6b1d4f5fab98fc41a242b51cb090df",
+      "name": "CEDEN Network Token",
+      "symbol": "CDN",
+      "decimals": 18,
+      "logoURI": "./logos/0x5b08fee76c6b1d4f5fab98fc41a242b51cb090df.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x5c5e384bd4e36724b2562ccaa582afd125277c9b",
+      "name": "Arrow Markets Token",
+      "symbol": "ARROW",
+      "decimals": 18,
+      "logoURI": "./logos/0x5c5e384bd4e36724b2562ccaa582afd125277c9b.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x61f23250451305f6c4426e81c50ae535edf94a02",
+      "name": "Fautor",
+      "symbol": "FTR",
+      "decimals": 18,
+      "logoURI": "./logos/0x61f23250451305f6c4426e81c50ae535edf94a02.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x68e551e7ef4bf59bf55b233bb6bea104b168ee24",
+      "name": "Chad Wentworth",
+      "symbol": "CWAI",
+      "decimals": 18,
+      "logoURI": "./logos/0x68e551e7ef4bf59bf55b233bb6bea104b168ee24.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x68ee0d0aad9e1984af85ca224117e4d20eaf68be",
+      "name": "Royale",
+      "symbol": "ROY",
+      "decimals": 18,
+      "logoURI": "./logos/0x68ee0d0aad9e1984af85ca224117e4d20eaf68be.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x6d923f688c7ff287dc3a5943caeefc994f97b290",
+      "name": "SmarterCoin",
+      "symbol": "SMRTR",
+      "decimals": 18,
+      "logoURI": "./logos/0x6d923f688c7ff287dc3a5943caeefc994f97b290.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x6ec18092ee47fcc8f1fe15899156ff20c64ab3d7",
+      "name": "Yes.",
+      "symbol": "yes",
+      "decimals": 18,
+      "logoURI": "./logos/0x6ec18092ee47fcc8f1fe15899156ff20c64ab3d7.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x735d8f3b6a5d2c96d0405230c50eaf96794fbb88",
+      "name": "XPower",
+      "symbol": "XPOW",
+      "decimals": 18,
+      "logoURI": "./logos/0x735d8f3b6a5d2c96d0405230c50eaf96794fbb88.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x73f49d00ac1b520f94d11248808c40774aeb0802",
+      "name": "MAJIN",
+      "symbol": "MAJIN",
+      "decimals": 18,
+      "logoURI": "./logos/0x73f49d00ac1b520f94d11248808c40774aeb0802.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x13b540442a6a5e523dacabbef7ee9f3b22245f90",
+      "name": "Splenium",
+      "symbol": "SAI",
+      "decimals": 18,
+      "logoURI": "./logos/0x13b540442a6a5e523dacabbef7ee9f3b22245f90.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x769bfeb9faacd6eb2746979a8dd0b7e9920ac2a4",
+      "name": "Vector JOE",
+      "symbol": "zJOE",
+      "decimals": 18,
+      "logoURI": "./logos/0x769bfeb9faacd6eb2746979a8dd0b7e9920ac2a4.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x77776ab9495729e0939e9badaf7e7c3312777777",
+      "name": "WABBIT",
+      "symbol": "WABBIT",
+      "decimals": 18,
+      "logoURI": "./logos/0x77776ab9495729e0939e9badaf7e7c3312777777.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x7979871595b80433183950ab6c6457752b585805",
+      "name": "Second",
+      "symbol": "SECOND",
+      "decimals": 18,
+      "logoURI": "./logos/0x7979871595b80433183950ab6c6457752b585805.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x79ba10485ae46a9436d560d9664369176ec2eb2b",
+      "name": "Chikn Worm",
+      "symbol": "WORM",
+      "decimals": 18,
+      "logoURI": "./logos/0x79ba10485ae46a9436d560d9664369176ec2eb2b.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x79bbf4508b1391af3a0f4b30bb5fc4aa9ab0e07c",
+      "name": "HeyAnon",
+      "symbol": "Anon",
+      "decimals": 18,
+      "logoURI": "./logos/0x79bbf4508b1391af3a0f4b30bb5fc4aa9ab0e07c.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x7a842a6f4580edd3df41c1f31e0395044de6bc75",
+      "name": "AVAX GO HIGHER",
+      "symbol": "HIGHER",
+      "decimals": 18,
+      "logoURI": "./logos/0x7a842a6f4580edd3df41c1f31e0395044de6bc75.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x7f9c841feadddb4bdbb2a161ca40bebc4f215a9a",
+      "name": "APower",
+      "symbol": "APOW",
+      "decimals": 18,
+      "logoURI": "./logos/0x7f9c841feadddb4bdbb2a161ca40bebc4f215a9a.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x82fe038ea4b50f9c957da326c412ebd73462077c",
+      "name": "JoeHatToken",
+      "symbol": "HAT",
+      "decimals": 18,
+      "logoURI": "./logos/0x82fe038ea4b50f9c957da326c412ebd73462077c.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x87bbfc9dcb66caa8ce7582a3f17b60a25cd8a248",
+      "name": "Big Red",
+      "symbol": "$Td",
+      "decimals": 9,
+      "logoURI": "./logos/0x87bbfc9dcb66caa8ce7582a3f17b60a25cd8a248.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x88f89be3e9b1dc1c5f208696fb9cabfcc684bd5f",
+      "name": "Fold",
+      "symbol": "FLD",
+      "decimals": 18,
+      "logoURI": "./logos/0x88f89be3e9b1dc1c5f208696fb9cabfcc684bd5f.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x8f47416cae600bccf9530e9f3aeaa06bdd1caa79",
+      "name": "ThorFi",
+      "symbol": "THOR",
+      "decimals": 18,
+      "logoURI": "./logos/0x8f47416cae600bccf9530e9f3aeaa06bdd1caa79.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x94025780a1ab58868d9b2dbbb775f44b32e8e6e5",
+      "name": "BetSwirl v2",
+      "symbol": "BETS",
+      "decimals": 18,
+      "logoURI": "./logos/0x94025780a1ab58868d9b2dbbb775f44b32e8e6e5.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x968be3f7bfef0f8edc3c1ad90232ebb0da0867aa",
+      "name": "Seedworld",
+      "symbol": "SWORLD",
+      "decimals": 18,
+      "logoURI": "./logos/0x968be3f7bfef0f8edc3c1ad90232ebb0da0867aa.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x96e1056a8814de39c8c3cd0176042d6cecd807d7",
+      "name": "Osaka Protocol",
+      "symbol": "OSAK",
+      "decimals": 18,
+      "logoURI": "./logos/0x96e1056a8814de39c8c3cd0176042d6cecd807d7.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x9913ba363073ca3e9ea0cd296e36b75af9e40bef",
+      "name": "TRESR",
+      "symbol": "TRESR",
+      "decimals": 18,
+      "logoURI": "./logos/0x9913ba363073ca3e9ea0cd296e36b75af9e40bef.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x997ddaa07d716995de90577c123db411584e5e46",
+      "name": "Jewel",
+      "symbol": "JEWEL",
+      "decimals": 18,
+      "logoURI": "./logos/0x997ddaa07d716995de90577c123db411584e5e46.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x9a8e0217cd870783c3f2317985c57bf570969153",
+      "name": "Magick",
+      "symbol": "MAGICK",
+      "decimals": 18,
+      "logoURI": "./logos/0x9a8e0217cd870783c3f2317985c57bf570969153.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x9c846d808a41328a209e235b5e3c4e626dab169e",
+      "name": "Chikn Fert",
+      "symbol": "FERT",
+      "decimals": 18,
+      "logoURI": "./logos/0x9c846d808a41328a209e235b5e3c4e626dab169e.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xa56f9a54880afbc30cf29bb66d2d9adcdcaeadd6",
+      "name": "Qi Dao Protocol",
+      "symbol": "QI",
+      "decimals": 18,
+      "logoURI": "./logos/0xa56f9a54880afbc30cf29bb66d2d9adcdcaeadd6.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xabe7a9dfda35230ff60d1590a929ae0644c47dc1",
+      "name": "StableJack aUSD",
+      "symbol": "aUSD",
+      "decimals": 18,
+      "logoURI": "./logos/0xabe7a9dfda35230ff60d1590a929ae0644c47dc1.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xb2f85b7ab3c2b6f62df06de6ae7d09c010a5096e",
+      "name": "XSGD",
+      "symbol": "XSGD",
+      "decimals": 6,
+      "logoURI": "./logos/0xb2f85b7ab3c2b6f62df06de6ae7d09c010a5096e.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xb36faf341c7817d681f23bcedbd3d85467e5ad9f",
+      "name": "Red Pepe",
+      "symbol": "RPEPE",
+      "decimals": 18,
+      "logoURI": "./logos/0xb36faf341c7817d681f23bcedbd3d85467e5ad9f.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xb44b645b5058f7e393f3ae6af58a4cef67006196",
+      "name": "Stick",
+      "symbol": "STICK",
+      "decimals": 18,
+      "logoURI": "./logos/0xb44b645b5058f7e393f3ae6af58a4cef67006196.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xb57b25851fe2311cc3fe511c8f10e868932e0680",
+      "name": "deUSD",
+      "symbol": "deUSD",
+      "decimals": 18,
+      "logoURI": "./logos/0xb57b25851fe2311cc3fe511c8f10e868932e0680.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xb5cc2ce99b3f98a969dbe458b96a117680ae0fa1",
+      "name": "Lucky Coin",
+      "symbol": "LUCKY",
+      "decimals": 18,
+      "logoURI": "./logos/0xb5cc2ce99b3f98a969dbe458b96a117680ae0fa1.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xbc78d84ba0c46dfe32cf2895a19939c86b81a777",
+      "name": "Solv BTC",
+      "symbol": "SolvBTC",
+      "decimals": 18,
+      "logoURI": "./logos/0xbc78d84ba0c46dfe32cf2895a19939c86b81a777.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xc06e17bdc3f008f4ce08d27d364416079289e729",
+      "name": "Dog Wif Crocs",
+      "symbol": "DWC",
+      "decimals": 18,
+      "logoURI": "./logos/0xc06e17bdc3f008f4ce08d27d364416079289e729.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xc0fbc4967259786c743361a5885ef49380473dcf",
+      "name": "Aleph.im v2 SuperToken",
+      "symbol": "ALEPH",
+      "decimals": 18,
+      "logoURI": "./logos/0xc0fbc4967259786c743361a5885ef49380473dcf.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xc139aa91399600f6b72975ac3317b6d49cb30a69",
+      "name": "Avax Meme Index",
+      "symbol": "AMI",
+      "decimals": 18,
+      "logoURI": "./logos/0xc139aa91399600f6b72975ac3317b6d49cb30a69.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xc3fb03e75cf916973d430d63635f3f6154d01dc9",
+      "name": "Governance xAlgo",
+      "symbol": "xALGO",
+      "decimals": 6,
+      "logoURI": "./logos/0xc3fb03e75cf916973d430d63635f3f6154d01dc9.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xc8e7fb72b53d08c4f95b93b390ed3f132d03f2d5",
+      "name": "SQRCAT",
+      "symbol": "SQRCAT",
+      "decimals": 18,
+      "logoURI": "./logos/0xc8e7fb72b53d08c4f95b93b390ed3f132d03f2d5.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xca30c93b02514f86d5c86a6e375e3a330b435fb5",
+      "name": "Backed IB01 $ Treasury Bond 0-1yr ",
+      "symbol": "bIB01",
+      "decimals": 18,
+      "logoURI": "./logos/0xca30c93b02514f86d5c86a6e375e3a330b435fb5.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xca8ebfb8e1460aaac7c272cb9053b3d42412aac2",
+      "name": "GAU Token",
+      "symbol": "GAU",
+      "decimals": 18,
+      "logoURI": "./logos/0xca8ebfb8e1460aaac7c272cb9053b3d42412aac2.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xcc0966d8418d412c599a6421b760a847eb169a8c",
+      "name": "SolvBTC Babylon",
+      "symbol": "SolvBTC.BBN",
+      "decimals": 18,
+      "logoURI": "./logos/0xcc0966d8418d412c599a6421b760a847eb169a8c.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xd036414fa2bcbb802691491e323bff1348c5f4ba",
+      "name": "Mu Coin",
+      "symbol": "MU",
+      "decimals": 18,
+      "logoURI": "./logos/0xd036414fa2bcbb802691491e323bff1348c5f4ba.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xdbdd50997361522495ecfe57ebb6850da0e4c699",
+      "name": "Balanced Dollar",
+      "symbol": "bnUSD",
+      "decimals": 18,
+      "logoURI": "./logos/0xdbdd50997361522495ecfe57ebb6850da0e4c699.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xdf788ad40181894da035b827cdf55c523bf52f67",
+      "name": "Yak Milk Suzaku Restaked sAVAX",
+      "symbol": "rsAVAX",
+      "decimals": 18,
+      "logoURI": "./logos/0xdf788ad40181894da035b827cdf55c523bf52f67.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xe05a6b6f84e67a74c1c263d7e35d06eab5c211b5",
+      "name": "xQI",
+      "symbol": "xQI",
+      "decimals": 18,
+      "logoURI": "./logos/0xe05a6b6f84e67a74c1c263d7e35d06eab5c211b5.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xe3b3f75f99da4ff26aa867ef70b48f8f6b2d4958",
+      "name": "Megaweapon",
+      "symbol": "WEAPON",
+      "decimals": 9,
+      "logoURI": "./logos/0xe3b3f75f99da4ff26aa867ef70b48f8f6b2d4958.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x35a7341ae0adb31cb210524d4d02563c061feac5",
+      "name": "Woof",
+      "symbol": "WOOF",
+      "decimals": 18,
+      "logoURI": "./logos/0x35a7341ae0adb31cb210524d4d02563c061feac5.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xe3f3ef63f193f001d72bb623ca6ece3e71451d3f",
+      "name": "Cast3",
+      "symbol": "CAST",
+      "decimals": 18,
+      "logoURI": "./logos/0xe3f3ef63f193f001d72bb623ca6ece3e71451d3f.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xe46b44179db3af934da552b35ff8869e98dc6af5",
+      "name": "predict",
+      "symbol": "predict",
+      "decimals": 18,
+      "logoURI": "./logos/0xe46b44179db3af934da552b35ff8869e98dc6af5.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xebb5d4959b2fba6318fbda7d03cd44ae771fc999",
+      "name": "KONG",
+      "symbol": "KONG",
+      "decimals": 18,
+      "logoURI": "./logos/0xebb5d4959b2fba6318fbda7d03cd44ae771fc999.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xedd5bbb085d429ecb3c46fcf3babbd69d242246c",
+      "name": "BGR",
+      "symbol": "BGR",
+      "decimals": 18,
+      "logoURI": "./logos/0xedd5bbb085d429ecb3c46fcf3babbd69d242246c.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xf6c95c3a750cc7f6a8c96d9b08cc132a44c7bd72",
+      "name": "ACID404: THE SICKOS ",
+      "symbol": "$SICKO",
+      "decimals": 18,
+      "logoURI": "./logos/0xf6c95c3a750cc7f6a8c96d9b08cc132a44c7bd72.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xf7d9281e8e363584973f946201b82ba72c965d27",
+      "name": "YieldYak gAVAX",
+      "symbol": "yyAVAX",
+      "decimals": 18,
+      "logoURI": "./logos/0xf7d9281e8e363584973f946201b82ba72c965d27.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xf7ed17f0fb2b7c9d3ddbc9f0679b2e1098993e81",
+      "name": "Mu Gold",
+      "symbol": "MUG",
+      "decimals": 18,
+      "logoURI": "./logos/0xf7ed17f0fb2b7c9d3ddbc9f0679b2e1098993e81.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xfab550568c688d5d8a52c7d794cb93edc26ec0ec",
+      "name": "Axelar Wrapped USDC",
+      "symbol": "axlUSDC",
+      "decimals": 6,
+      "logoURI": "./logos/0xfab550568c688d5d8a52c7d794cb93edc26ec0ec.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xfc6da929c031162841370af240dec19099861d3b",
+      "name": "Domi",
+      "symbol": "DOMI",
+      "decimals": 18,
+      "logoURI": "./logos/0xfc6da929c031162841370af240dec19099861d3b.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x441eed9fee4f002c541abc91075d35cd28fd6f7d",
+      "name": "Gold Fever Native Gold",
+      "symbol": "NGL",
+      "decimals": 18,
+      "logoURI": "./logos/0x441eed9fee4f002c541abc91075d35cd28fd6f7d.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x26debd39d5ed069770406fca10a0e4f8d2c743eb",
+      "name": "GUNZ",
+      "symbol": "GUN",
+      "decimals": 18,
+      "logoURI": "./logos/0x26debd39d5ed069770406fca10a0e4f8d2c743eb.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x3fe4902b275caf603c46c81f3d921bb8515b5bc0",
+      "name": "Stable Jack",
+      "symbol": "JACK",
+      "decimals": 18,
+      "logoURI": "./logos/0x3fe4902b275caf603c46c81f3d921bb8515b5bc0.png"
     }
   ]
 }
