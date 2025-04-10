@@ -6,7 +6,7 @@
       "name": "Wrapped AVAX",
       "symbol": "WAVAX",
       "decimals": 18,
-      "logoURI": "./logos/0xd00ae08403b9bbb9124bb305c09058e32c39a48c.png"
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43113/logos/0xd00ae08403b9bbb9124bb305c09058e32c39a48c.png"
     },
     {
       "chainId": 43113,
@@ -14,7 +14,7 @@
       "name": "USD Coin",
       "symbol": "USDC",
       "decimals": 6,
-      "logoURI": "./logos/0xb6076c93701d6a07266c31066b298aec6dd65c2d.png"
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43113/logos/0xb6076c93701d6a07266c31066b298aec6dd65c2d.png"
     },
     {
       "chainId": 43113,
@@ -22,7 +22,7 @@
       "name": "USD Tether",
       "symbol": "USDT",
       "decimals": 6,
-      "logoURI": "./logos/0xab231a5744c8e6c45481754928ccffffd4aa0732.png"
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43113/logos/0xab231a5744c8e6c45481754928ccffffd4aa0732.png"
     },
     {
       "chainId": 43113,
@@ -30,7 +30,7 @@
       "name": "Wrapped WAGMI",
       "symbol": "WWAGMI",
       "decimals": 18,
-      "logoURI": "./logos/0xf561800ededf4ce146ed427cacf1fb8ab3b2d452.png"
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43113/logos/0xf561800ededf4ce146ed427cacf1fb8ab3b2d452.png"
     },
     {
       "chainId": 43113,
@@ -38,7 +38,7 @@
       "name": "Fuji PNG",
       "symbol": "fujiPNG",
       "decimals": 18,
-      "logoURI": "./logos/0xaf5d473b3f8f96a5b21c6bbb97e09b491335acb9.png"
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43113/logos/0xaf5d473b3f8f96a5b21c6bbb97e09b491335acb9.png"
     },
     {
       "chainId": 43113,
@@ -46,7 +46,7 @@
       "name": "JAWZ Fuji TestNet",
       "symbol": "JAWZ",
       "decimals": 18,
-      "logoURI": "./logos/0x0a8c21858ac24e1305bafbddf4dfb73a2cc9ddbc.png"
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43113/logos/0x0a8c21858ac24e1305bafbddf4dfb73a2cc9ddbc.png"
     },
     {
       "chainId": 43113,
@@ -54,7 +54,7 @@
       "name": "The Fuji stablecoin",
       "symbol": "FUJISTABLE",
       "decimals": 6,
-      "logoURI": "./logos/0x2058ec2791dd28b6f67db836ddf87534f4bbdf22.png"
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43113/logos/0x2058ec2791dd28b6f67db836ddf87534f4bbdf22.png"
     },
     {
       "chainId": 43113,
@@ -62,7 +62,7 @@
       "name": "To the Moon",
       "symbol": "FUJIMOON",
       "decimals": 9,
-      "logoURI": "./logos/0x97132c109c6816525f7f338dcb7435e1412a7668.png"
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43113/logos/0x97132c109c6816525f7f338dcb7435e1412a7668.png"
     },
     {
       "chainId": 43113,
@@ -70,7 +70,7 @@
       "name": "The Crypt",
       "symbol": "RIP",
       "decimals": 18,
-      "logoURI": "./logos/0x224695ba2a98e4a096a519b503336e06d9116e48.png"
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43113/logos/0x224695ba2a98e4a096a519b503336e06d9116e48.png"
     }
   ]
 }
