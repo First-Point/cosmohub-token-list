@@ -47,6 +47,14 @@
       "symbol": "WETH",
       "decimals": 18,
       "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43114/logos/0x8b82a291f83ca07af22120aba21632088fc92931.png"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xa813d175675C7F19Bb7fD541F5AD1bcAF2117FE7",
+      "name": "PEON",
+      "symbol": "PEON",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/First-Point/cosmohub-token-list/refs/heads/main/assets/43114/logos/0xa813d175675C7F19Bb7fD541F5AD1bcAF2117FE7.png"
     }
   ]
 }
