@@ -2807,6 +2807,14 @@
       "symbol": "JACK",
       "decimals": 18,
       "logoURI": "./logos/0x3fe4902b275caf603c46c81f3d921bb8515b5bc0.png"
+    }.
+    {
+      "chainId": 43114,
+      "address": "0xa813d175675C7F19Bb7fD541F5AD1bcAF2117FE7",
+      "name": "PEON",
+      "symbol": "PEON",
+      "decimals": 18,
+      "logoURI": "/logos/43114/0xa813d175675C7F19Bb7fD541F5AD1bcAF2117FE7.png"
     }
   ]
 }
